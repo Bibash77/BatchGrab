@@ -1,9 +1,9 @@
 {
-  "mode": "preview",
-  "productionApproved": false,
+  "mode": "public",
+  "productionApproved": true,
   "publisherName": "Batch Grab",
   "contactEmail": "ronaldoibibash310@gmail.com",
-  "publicOrigin": "",
+  "publicOrigin": "https://project-m1fyy.vercel.app",
   "analytics": false,
   "chromeStoreUrl": "",
   "storeVerified": false,

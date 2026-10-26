@@ -1,60 +1,57 @@
-# Batch Grab public launch status
+# Batch Grab launch status
 
-Last checked: 2026-10-26. Status words: NOT STARTED, PREPARED, AWAITING APPROVAL, SUBMITTED, LIVE, BLOCKED. A local build is not a live website or an approved store listing.
+Checked 2026-10-26 (Asia/Tokyo). States: NOT STARTED, PREPARED, AWAITING APPROVAL, SUBMITTED, LIVE, BLOCKED.
 
-| Component | State | Evidence / next action |
+| Component | State | Evidence / next step |
 |---|---|---|
-| Production extension 0.4.0 | PREPARED | ZIP/source/archive checks passed; exact hash below |
-| English/Japanese workflows | PREPARED | Real Chrome toolbar/download tests passed again on October 26 |
-| Static Vercel website | PREPARED | 22 bilingual/task/help pages, 30 working demo PDFs, reviewed Vercel-specific hosting disclosures, exact static deployment candidate and production SEO gates |
-| Vercel project access | PREPARED | Owner approved bib’s projects (bibs-projects-f9270923, Hobby), browser account ronaldobibash310-8002; empty project created successfully |
-| Exact Vercel project/domain | PREPARED | batch-grab, prj_WLJ1viALkGAOfKNStBx82yB793HU. Vercel assigned project-m1fyy.vercel.app; domain settings say No Deployment. Project rename did not rename the generated domain |
-| Vercel deployment approval | AWAITING APPROVAL | Exact static candidate and real destination in marketing/DEPLOYMENT_APPROVAL.md; previous approval was empty-project creation only |
-| Public Vercel deployment | NOT STARTED | No deployment submitted; live URL and live tests unavailable |
-| Chrome publisher dashboard | PREPARED | Owner sign-in and two-step verification completed; authenticated publisher ronaldobibash310@gmail.com |
-| Chrome ZIP draft upload | PREPARED | Approved upload succeeded after owner enabled two-step verification; package page verifies 0.4.0, English/Japanese and five expected permissions |
-| Store listing/permissions/privacy packet | PREPARED | marketing/STORE_APPROVAL_PACKET.md and CHROME_STORE_LISTING.md |
-| Saved Chrome item draft | PREPARED | Item mbeiingcdkhboociiidafkphfefkngoi. English/Japanese copy, Tools category, icon/screenshots/tile, single purpose, five permission explanations and remote code=No saved. Public URLs and final declarations pending |
-| Submit for review / store publication | NOT STARTED | Requires saved completed draft, real privacy/support URLs and exact owner approval |
-| Store review status | NOT STARTED | Nothing submitted; real public listing URL unknown |
-| Website analytics | PREPARED | Local-memory event hooks only; no analytics transmission or visitor measurement enabled |
-| Extension usage telemetry | NOT STARTED | Design only; explicit opt-in/owner approval required before implementation |
-| Three launch placements | PREPARED | Current policy checks and exact customized drafts in marketing/THREE_LAUNCH_PLACEMENTS.md |
-| Marketing publication | AWAITING APPROVAL | No approved post URLs or posts published |
-| First-user measurement | PREPARED | Successful user, first 10, WAU, returning and 50/100 active definitions in MEASUREMENT_PLAN.md |
+| Extension 0.4.0 release | PREPARED | 14-file production ZIP; hash below; runtime unchanged |
+| Vercel website | LIVE | https://project-m1fyy.vercel.app — owner-approved production upload; Ready plus independent unauthenticated verification |
+| English/Japanese discovery and onboarding | LIVE | Published, correct assets; local responsive suite passed at 375/768/1440; live Japanese render checked at 645px with no overflow |
+| Free beta download | LIVE | Public browser download completed; exact release SHA-256 verified |
+| Public privacy/support/FAQ | LIVE | English/Japanese policy, source-host/local-storage/retention limits and Vercel/Gmail disclosures verified |
+| Chrome Web Store item | PREPARED | Draft mbeiingcdkhboociiidafkphfefkngoi, 0.4.0, English/Japanese, Tools, prepared assets and five explanations saved |
+| Chrome website URLs | PREPARED | Live homepage, /faq.html and /privacy.html saved in unpublished draft |
+| Publisher contact verification | BLOCKED | Google shows public contact ronaldoibibash310@gmail.com as Unverified; owner needs access to that exact inbox. Asked whether the address is accessible or a typo. No substitute address chosen |
+| Final privacy declarations / certifications | AWAITING APPROVAL | Data categories and all three certifications untouched; exact proposed mapping in STORE_APPROVAL_PACKET.md; owner must review publisher trader/non-trader declaration |
+| Chrome review submission | NOT STARTED | No review submitted or public listing URL known; requires completed verification and explicit review-submission approval |
+| Store publication | NOT STARTED | No automatic/publication action approved |
+| Analytics | PREPARED | Memory-only website hooks; no transmitted events or extension telemetry; Vercel Web Analytics not enabled |
+| Marketing placements | PREPARED | Three exact drafts in marketing/THREE_LAUNCH_PLACEMENTS.md; site links now real |
+| Marketing posts | AWAITING APPROVAL | No Reddit post/comment or external outreach published |
 
-## Exact production release
+## Verified release and deployment
 
-Source inspected: commit `416dcc40afd9852f00a63267de3a15298e1e3007`.
-Package: `dist/batch-grab-0.4.0-production.zip`
-Version: **0.4.0**
-SHA-256: `60a442a92b7576b633718fba672471c120ac17d4f8b79cf436ae6c4f8975f63d`
-Contents: 14 allowlisted production files (MV3 manifest, eight runtime/manifest files in total, four PNG icons and two locale JSON files). No test data, reports or browser profiles. Runtime has not been changed for this launch mission.
+- Repository: https://github.com/Bibash77/BatchGrab
+- Production ZIP: dist/batch-grab-0.4.0-production.zip, version **0.4.0**, 14 production files.
+- Extension/beta ZIP SHA-256: **60a442a92b7576b633718fba672471c120ac17d4f8b79cf436ae6c4f8975f63d**.
+- Approved static upload ZIP SHA-256: **e52fde389ce61c9c54045ea1f684a8b0ac1c02d83175d1d7abd5f6d414a749b2**, 68 files, 489,505 bytes.
+- Content source revision: ba1b1b65c9a21bafce1cae245d42861b96d46f49. Site configuration in repository is now synchronized to the approved public origin.
+- Vercel account: ronaldobibash310-8002; team **bib’s projects / bibs-projects-f9270923**, observed Hobby.
+- Existing project: **batch-grab**, **prj_WLJ1viALkGAOfKNStBx82yB793HU**.
+- Deployment dashboard: https://vercel.com/bibs-projects-f9270923/batch-grab/EM4RmkeLGsAnbTyoymXTdx2G9z9G
+- Observed deployment URL: https://batch-grab-2i31vgofl-bibs-projects-f9270923.vercel.app
+- Production origin: **https://project-m1fyy.vercel.app**.
+- Source: Vercel Drop. No Git integration, paid service, domain purchase, database, function or analytics activation performed.
+- Store draft: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a/mbeiingcdkhboociiidafkphfefkngoi/edit
+- Store public URL: unknown; not invented.
 
-Fresh verification: 23 naming/filter assertions, 19 visual helper assertions, security and storage-rollback coverage passed. Five real Chrome fixture workflows passed again, including 30 exact PDF names/folders, actual output bytes, intentional failure/retry and responsive 5,000-image list behavior. English/Japanese toolbar tests and Unicode download passed again. The 22-page local website checks passed at 375/768/1440 widths with zero broken internal links, all 30 fixture PDFs accessible, zero page errors and no external requests. Prior worker-restart/public-site evidence remains in docs/RELEASE_0.4.0.md. New tests are local QA, not user adoption.
+## Test evidence
 
-## Account and approval blockers
+Independent HTTPS checks passed for **67 published files** (all uploaded public assets except the platform configuration file), including **22 pages**, images, both language policies, robots/sitemap, two ZIPs and **30 PDFs**. All file hashes match the approved candidate. CSP, nosniff, no-referrer and HSTS verified on every response; fixture/download noindex headers verified. Root route also matches index.html. Browser beta download completed and independently matches the release hash. Live English and Japanese pages and visible image loads checked.
 
-1. **Vercel destination:** owner approved creating an empty project in bib’s projects / bibs-projects-f9270923 (Hobby), account ronaldobibash310-8002. Created and renamed it batch-grab; project ID prj_WLJ1viALkGAOfKNStBx82yB793HU. Assigned domain project-m1fyy.vercel.app has No Deployment. No Git connection, site upload, analytics activation or deployment was performed. Separate deployment approval remains required. Exact 68-file static candidate prepared locally with SHA-256 e52fde389ce61c9c54045ea1f684a8b0ac1c02d83175d1d7abd5f6d414a749b2; no upload. See marketing/DEPLOYMENT_APPROVAL.md.
-2. **Chrome draft:** owner approved ZIP upload and the English/Japanese listing, Tools category, prepared assets and permission explanations. All are saved. Final data declarations/certifications, public URLs and review submission remain pending; nothing is published.
-3. **Support email:** existing source uses `ronaldoibibash310@gmail.com`; authenticated publisher uses `ronaldobibash310@gmail.com`. Owner explicitly confirmed keeping ronaldoibibash310@gmail.com as the public support email. The account and support addresses may differ.
-4. **Publication approvals:** website destination/deployment, complete store declarations/submission and exact marketing posts remain separate approvals. No purchases, paid infrastructure or domain registration are authorized.
+The release-check requests had a median 0.251s and maximum 0.571s at concurrency four, including TLS/body transfer. These are one-run observations, not Core Web Vitals, load-test results or guaranteed performance. Browser tool completion for the download took unusually long despite the successful small-file HTTP checks; no general download-time claim is made.
 
-## External URLs and observed results
+Existing local browser suite passed after production configuration: 22 pages at 375/768/1440, zero broken links/errors/external requests, 30 working PDFs, exact downloaded ZIP hash, SEO/preview separation. The verifier now restores the configured mode after its isolated SEO checks. Prior extension naming/visual/security/storage rollback, five fixture workflows and English/Japanese toolbar/Unicode tests remain passed as recorded in docs/RELEASE_0.4.0.md and earlier launch verification; no runtime change required retesting them again.
 
-- Source repository: https://github.com/Bibash77/BatchGrab
-- Publisher dashboard observed: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a
-- Item-specific store draft URL: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a/mbeiingcdkhboociiidafkphfefkngoi/edit
-- Store public URL: **not known / not invented**.
-- Vercel project: https://vercel.com/bibs-projects-f9270923/batch-grab
-- Assigned production domain: project-m1fyy.vercel.app — **No Deployment; not a live website**.
-- Approved/public marketing post URLs: **none**.
-- Live HTTPS, download, screenshot, FAQ, privacy and performance tests: **not run; no deployed URL**.
+Raw local results/screenshots: marketing/output/launch/live-verification.json, live-home.png, live-home-ja.png, store-contact-email-handoff.png and store-remaining-requirements.png. Local test outputs are excluded from Git. Concise public evidence: marketing/LIVE_VERIFICATION.md.
+
+## Remaining owner actions
+
+1. Complete Google’s contact-email verification for the exact confirmed public support inbox. It differs from the signed-in publisher address ronaldobibash310@gmail.com. No codes, credentials or private inbox contents need to be shared. If the contact was a typo, provide an explicit correction before any website/store changes or replacement deployment.
+2. Review the publisher's existing trader/non-trader declaration and any required address/identity fields personally. No legal identity facts or declarations were invented or changed.
+3. Review exact listing/privacy/permissions in STORE_APPROVAL_PACKET.md; grant separate approval for final certifications and review submission. Current distribution settings observed: Free of charge, Public, All regions; unchanged. No approval for automatic publication has been assumed.
+4. Approve exact marketing content/destination separately before public posting. Store CTA remains honest developer-mode beta access until a real approved store URL is verified.
 
 ## Actual adoption
 
-Website visitors: **not measured**. Installation CTA events: **not collected**. Store installations: **not available**. Successful real users: **no confirmations recorded**. Weekly/returning/28-day active users: **not measured**. Goals of 10/50/100 remain goals; local test runs are excluded.
-
-## Completed external actions
-
-Read account/project metadata through the connector; empty-project creation returned 403 three times despite owner consent attempts. Browser sign-in works in the owner-approved Hobby team. Created an empty project through Vercel’s explicit empty-project control, then renamed the generated project to batch-grab. Verified project ID and assigned domain; no production or preview deployment exists. The owner enabled Google two-step verification, then the approved production ZIP upload created the Chrome draft. Approved English/Japanese listing copy, category, assets and permission explanations were saved with Item saved confirmations. Package page confirms version 0.4.0 and “This item is not published yet.” Data category checkboxes and three certifications remain untouched; no policy URL is invented. No deployment, review submission, public post, outreach, payment or security-check bypass was performed.
+Visits, install CTA events, installations, weekly active and returning users: **not measured / no confirmed real-user records**. Successful real users: **zero confirmations recorded**. Revenue: **zero confirmed**; no payments collected or infrastructure built. All agent verification traffic/downloads are QA and excluded from adoption.

@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /fixture/
+Disallow: /downloads/
+Sitemap: https://project-m1fyy.vercel.app/sitemap.xml

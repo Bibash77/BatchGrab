@@ -1,5 +1,7 @@
 # Batch Grab 0.4.0
 
+**Website and free beta:** [project-m1fyy.vercel.app](https://project-m1fyy.vercel.app/) · [Install instructions](https://project-m1fyy.vercel.app/beta.html). Chrome Web Store review/publication is still pending.
+
 [日本語](README-JA.md) · [Public launch status](LAUNCH_STATUS.md)
 
 A free, local-first Chrome extension for collecting useful webpage images and organizing web documents. English and Japanese UI. No account, payments, AI service or extension telemetry.

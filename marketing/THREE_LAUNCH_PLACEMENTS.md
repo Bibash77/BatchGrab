@@ -1,6 +1,6 @@
 # First 10 users — three launch placements
 
-Checked 2026-10-26. Exact public posting/submission requires owner approval. No posts are published or approved yet. Replace URL placeholders only after actual deployment or store approval.
+Checked 2026-10-26. Exact public posting/submission requires owner approval. No posts are published or approved yet. Website links below now use the independently verified live origin. Store publication remains pending.
 
 ## 1. Chrome Web Store search — primary install-intent channel
 
@@ -8,7 +8,7 @@ Destination: the owner's authenticated developer dashboard, followed by the real
 
 Exact listing copy, languages, screenshots and permissions are in CHROME_STORE_LISTING.md and STORE_APPROVAL_PACKET.md. The title is Batch Grab; short description explains selecting images/documents, reviewing names and checking outcomes. Use Free, accurate categories and tested English/Japanese. No fabricated installs, testimonials, speed guarantees or protected-site claims.
 
-Next action: owner approves draft upload, listing/declarations and final submission separately. After approval, verify installation from the real listing and wire that exact URL into the website. Dashboard installation statistics, when available, are installations under Google's definitions, not confirmed successful tasks.
+Next action: upload and listing draft are saved; owner completes contact verification and approves final declarations/review submission separately. After approval, verify installation from the real listing and wire that exact URL into the website. Dashboard installation statistics, when available, are installations under Google's definitions, not confirmed successful tasks.
 
 ## 2. r/chrome_extensions — one disclosed maker post
 
@@ -24,8 +24,8 @@ A page can expose several resolutions of the same image, ordinary navigation lin
 
 I’m the maker of Batch Grab, a free Chrome extension for selecting useful webpage images and collecting organized documents. Suggested separates likely content from site assets; Review and All files keep uncertain candidates accessible. You can review names and check actual completed/failed downloads. English and Japanese UI; no account or extension telemetry.
 
-Screenshots, limitations and access: [APPROVED SITE URL]/?utm_source=reddit_extensions
-[Use only the true access sentence: “Install from the verified Chrome Web Store listing” OR “Pre-store developer-mode ZIP beta; not store-reviewed.”]
+Screenshots, limitations and access: https://project-m1fyy.vercel.app/?utm_source=reddit_extensions
+Pre-store developer-mode ZIP beta; not store-reviewed.
 
 Try only files you are allowed to download. Names use page context and can be wrong; there is no restricted-content bypass or streaming capture. Please keep private URLs and documents out of comments. Product feedback is welcome and optional.
 
@@ -43,8 +43,8 @@ If you collect public reports or allowed product images for a client folder, sta
 
 I make Batch Grab, a free Chrome extension that helps with this workflow: select webpage images or document links, review names/folders, then inspect completed and failed downloads. It runs locally without a Batch Grab account or extension telemetry. It does not validate document contents, crawl websites or bypass access restrictions.
 
-Actual screenshots, a small-task guide and current installation instructions: [APPROVED SITE URL]/?utm_source=reddit_smallbusiness
-[State the real current store/developer-mode beta status.]
+Actual screenshots, a small-task guide and current installation instructions: https://project-m1fyy.vercel.app/?utm_source=reddit_smallbusiness
+The free beta uses Chrome developer mode; Chrome Web Store publication is pending.
 
 Please do not post confidential documents or private source links. I’m available to answer product-use questions if you choose to reply.
 

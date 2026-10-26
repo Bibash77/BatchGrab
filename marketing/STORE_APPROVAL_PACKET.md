@@ -13,7 +13,7 @@ Authenticated publisher observed: `ronaldobibash310@gmail.com`.
 Publisher dashboard: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a
 The owner enabled two-step verification and the explicitly approved ZIP upload succeeded. Draft item: `mbeiingcdkhboociiidafkphfefkngoi`.
 Draft URL: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a/mbeiingcdkhboociiidafkphfefkngoi/edit
-Package page confirms 0.4.0, English/Japanese and activeTab/scripting/downloads/storage/alarms; it explicitly states the item is not published. Owner subsequently approved unpublished listing edits. English/Japanese descriptions, Tools, prepared icon/screenshots/tile, single purpose, all five explanations and remote code=No are saved. Final data selections and certifications remain untouched. Public support/privacy URLs await actual website deployment. No review submission or publication has occurred.
+Package page confirms 0.4.0, English/Japanese and activeTab/scripting/downloads/storage/alarms; it explicitly states the item is not published. Owner subsequently approved unpublished listing edits. English/Japanese descriptions, Tools, prepared icon/screenshots/tile, single purpose, all five explanations and remote code=No are saved. Final data selections and certifications remain untouched. Verified public homepage, support and privacy URLs are now saved. No review submission or publication has occurred.
 
 The public support address in existing source is `ronaldoibibash310@gmail.com`, which differs from the publisher address. The owner explicitly confirmed keeping the original public support address ronaldoibibash310@gmail.com. Do not replace it with the account address.
 
@@ -27,7 +27,10 @@ Short description: Preview and download webpage images and documents. Review fil
 Full English/Japanese listing text: CHROME_STORE_LISTING.md (use the exact sections as written).
 Screenshots: store-assets/01-collect-images.jpg, 02-organize-documents.jpg, 03-check-outcomes.jpg, 04-japanese.jpg; 1280×800 each. They show actual interface captures on fictional fixtures. Optional tile: small-promo-440x280.jpg. Icon: icon-128.png, 96px content with 16px transparent padding.
 
-Support website and privacy URL: pending an approved and live HTTPS origin. Required final paths are /faq.html and /privacy.html. No invented URL or local URL should be submitted as a public policy.
+Saved homepage: https://project-m1fyy.vercel.app/
+Saved support URL: https://project-m1fyy.vercel.app/faq.html
+Saved privacy URL: https://project-m1fyy.vercel.app/privacy.html
+All independently verified live; Japanese policy is at /privacy-ja.html. Google still requires contact email verification and all three privacy certifications. Contact ronaldoibibash310@gmail.com currently shows Unverified. The owner is checking inbox access; do not silently substitute the publisher sign-in email.
 
 ## Exact single-purpose text
 
@@ -69,3 +72,17 @@ The extension does not deliberately request names/contact details, financial/pay
 4. Fill single purpose, five permission justifications and remote code = No. Review actual data-category definitions and record proposed selections for owner review.
 5. Add the verified public support/privacy URLs after website deployment. Confirm the intended support email and publisher verification fields yourself; do not invent legal identity data.
 6. Show the complete saved draft and exact privacy selections to the owner. Request explicit approval before Submit for review or automatic publication settings. Review/submission status stays NOT STARTED until the site reports otherwise.
+
+## Exact final-review proposal — not yet applied
+
+Observed current distribution: **Free of charge**, **Public**, **All regions**; unchanged. Publisher display name is currently the account email; no new legal identity/display-name declaration is invented. Existing trader selection is non-trader; owner review required before submission.
+
+Proposed data categories for owner review: **Website content** (resource links/labels/images), **Web history** (invoked-page/resource URLs and source context), **User activity** (download attempts/outcomes and optional loaded-resource observations). These describe local functional handling, not browser-wide history logging or analytics transmission. Other categories stay unselected because they are not deliberately requested as data types; sensitive labels or signed URLs can still occur incidentally, as the policy explains. All category boxes currently remain unchanged/unselected; this proposal is not a saved declaration or Google determination.
+
+Exact three certification texts still unchecked:
+
+1. I do not sell or transfer user data to third parties, outside of the approved use cases.
+2. I do not use or transfer user data for purposes that are unrelated to my item's single purpose.
+3. I do not use or transfer user data to determine creditworthiness or for lending purposes.
+
+Before submission the owner must confirm these declarations and contact verification. A subsequent approval must authorize final declarations and **review submission only**, keeping automatic publication disabled if the dashboard offers that choice. No final submission or automatic publication is currently approved. Account-level trader/address/identity declarations remain owner decisions, not inferred from this product plan.

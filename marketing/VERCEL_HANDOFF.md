@@ -1,39 +1,35 @@
-# Vercel deployment handoff — no deployment yet
+# Vercel deployment — production live
 
-Current approved empty-project destination is the browser account/team listed below. The older connector account/team biswash166-9736s-projects is historical context only. No paid resource, custom domain or analytics service is authorized.
+Owner approved the exact static production ZIP and target before upload. The website is **LIVE** at https://project-m1fyy.vercel.app. Independent anonymous HTTPS verification passed; see LIVE_VERIFICATION.md and LAUNCH_STATUS.md.
 
-The API rejected creating the empty project with 403. The owner's first consent link was already expired at the retry. The owner also completed a fresh consent action, but the next request still returned 403 within its 10-minute window. Do not keep repeating consent links. The Vercel web login is open for an authenticated dashboard fallback. The local CLI session also reports an invalid token; no credentials were inspected, printed or replaced.
+## Verified target
 
-## Verified empty project — created with owner approval
-
-Owner approved account **ronaldobibash310-8002**, team **bib’s projects**, slug **bibs-projects-f9270923**, **Hobby**, for empty-project creation only.
-
-- Project: **batch-grab**
-- Project ID: **prj_WLJ1viALkGAOfKNStBx82yB793HU**
+- Browser account: ronaldobibash310-8002
+- Team: bib’s projects / bibs-projects-f9270923, observed Hobby
+- Project: batch-grab
+- Project ID: prj_WLJ1viALkGAOfKNStBx82yB793HU
 - Dashboard: https://vercel.com/bibs-projects-f9270923/batch-grab
-- Assigned production domain: **project-m1fyy.vercel.app**, explicitly **No Deployment**.
-- Vercel’s empty-project button generated project-m1fyy automatically; it was renamed to batch-grab in General settings. The generated domain retained its original name.
-- No Git connection, site upload, production/preview deployment, analytics activation or paid service.
+- Deployment: https://vercel.com/bibs-projects-f9270923/batch-grab/EM4RmkeLGsAnbTyoymXTdx2G9z9G
+- Generated deployment URL: https://batch-grab-2i31vgofl-bibs-projects-f9270923.vercel.app
+- Public production origin: https://project-m1fyy.vercel.app
+- Vercel status: Ready, Production, Vercel Drop
 
-Separate approval is still required before deployment. Do not claim the assigned domain serves the website. The connector remains attached to the older account; use the authenticated approved browser target unless its connection is separately corrected. Default project Data Preferences currently has “Improve models with this project’s data” checked; no source was uploaded. Review with owner before uploading source if a change is desired.
+The empty-project control originally assigned project-m1fyy; the project was renamed to batch-grab, while its domain retained the original generated name. No custom domain is needed.
 
-## After destination approval
+## Exact approved release
 
-1. Create or inspect the single intended Batch Grab project. Avoid linking Git until deployment is approved, because an integration can trigger automatic builds/publication.
-2. Read its actual project ID, owning team, plan and assigned project domain from Vercel. Present these and the exact source revision to the owner.
-3. Obtain explicit approval for that destination and public static deployment. Do not assume a guessed project-name URL is available.
-4. Confirm the intended public support email and approve the policy. Set publicOrigin to the actual approved origin and productionApproved=true. Keep analytics=false and storeVerified=false until their separate prerequisites are satisfied.
-5. Build from repository root. vercel.json specifies framework=null, buildCommand=`node marketing/scripts/build-site.cjs`, outputDirectory=`marketing/site`, installCommand empty. VERCEL=1 builds do not depend on a zip utility; production files and screenshots are already in the repository.
-6. Production may be indexable only with approved origin/config. Preview deployments remain noindex. No database, functions, paid domain, logs drain or analytics service is needed.
-7. Submit the approved deployment and retain its deployment ID. Wait for READY; then test its real HTTPS project domain without privileged auth. Do not weaken deployment protection or another project's settings without explicit approval.
-8. Verify landing/help/JA/privacy pages, image loads, ZIP hash, 30 PDF fixture links, robots/sitemap/canonical, expected security headers and small-screen layout. Record measured response timings as test observations, not user conversion or guaranteed performance.
+68-file static ZIP SHA-256 **e52fde389ce61c9c54045ea1f684a8b0ac1c02d83175d1d7abd5f6d414a749b2**, 489,505 bytes. Source content revision ba1b1b65c9a21bafce1cae245d42861b96d46f49. Uploaded through the existing project’s Choose a file to deploy control, then Deploy to Production after explicit approval. All 67 public assets match the candidate hashes; the 68th file is platform configuration, whose actual header effects were verified.
 
-## Manual fallback
+No Git integration, automatic build pipeline, paid upgrade, custom domain purchase, database, function or analytics activation was added. Vercel Web Analytics remains disabled. The default project Data Preferences setting was observed checked; it was not changed. Upload contains only public static distribution files, not browser profiles, contacts or credentials.
 
-In Vercel, choose the intended team → Add New → Project, or create an empty Other/static project. Use the existing Bibash77/BatchGrab repository only when ready for a deployment. Set root directory to repository root and the settings above. Stop before Deploy until the exact destination/config has been approved. No need to enter payment information or purchase a domain. Provide the actual project link so assisted verification can resume.
+## Rebuilding and future updates
 
-If an interactive Git import would automatically deploy, do not finish it merely to inspect settings. The prepared site ZIP and committed configuration remain available while authentication/approval is resolved.
+Repository launch-config.json now records the approved public origin and production state; analytics=false and storeVerified=false. The real store URL remains unknown and must not be guessed. Repository-root static build remains `node marketing/scripts/build-site.cjs`, output marketing/site. Preview environment builds stay noindex. Root vercel.json retains repository build settings.
 
-## Prepared deployment route
+The approved browser upload was a separate static directory with root-level vercel.json: framework=null, buildCommand empty, installCommand empty, outputDirectory='.', and the same security headers. Do not upload the repository-root vercel.json alone with the flat static directory, because its output path differs. Local candidate and hash manifest remain in ignored marketing/output/launch/.
 
-`DEPLOYMENT_APPROVAL.md` identifies an exact locally rendered static ZIP for the existing project and assigned origin. Use the existing project’s file-deployment control only after approval; no Git connection is required. This candidate contains root-level static vercel.json with no install/build commands and outputDirectory=".". Repository-root builds remain available as an alternative, but are not the proposed browser upload. The candidate is local and unapproved; no deployment exists.
+Future deployments need explicit approval for their concrete artifact/destination. Use the same existing project; do not create a duplicate or enable Git accidentally. Verify HTTPS, files/download hashes, headers, both languages and honest store status after deployment.
+
+## Historical authentication context
+
+The connected MCP account is still biswash166-9736 context (original team slug biswash166-9736s-projects), not the approved browser account. It returned 403 despite consent attempts; local CLI token was invalid. Those failures were resolved for this deployment by the owner-authenticated browser, without inspecting or replacing credentials. Do not repeat consent loops or use the connector’s different team for Batch Grab updates.

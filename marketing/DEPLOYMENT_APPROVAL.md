@@ -1,6 +1,6 @@
 # Exact deployment approval — Batch Grab 0.4.0
 
-Prepared 2026-10-26. **AWAITING APPROVAL. No upload or deployment performed.** The previous owner approval covered empty-project creation only.
+Prepared 2026-10-26. **APPROVED AND DEPLOYED.** The owner explicitly approved this exact ZIP and production destination in chat. Upload and Deploy to Production succeeded; independent live verification passed. See LIVE_VERIFICATION.md and LAUNCH_STATUS.md.
 
 ## Destination and scope
 
@@ -10,7 +10,7 @@ Prepared 2026-10-26. **AWAITING APPROVAL. No upload or deployment performed.** T
 - Project ID: prj_WLJ1viALkGAOfKNStBx82yB793HU
 - Dashboard: https://vercel.com/bibs-projects-f9270923/batch-grab
 - Assigned production origin: https://project-m1fyy.vercel.app
-- Domain status observed: **No Deployment**. The assigned name is real; the website is not live.
+- Prior domain status: No Deployment. Current production site is **LIVE**, independently verified.
 - Proposed action: upload the exact static ZIP below to this existing project's file-deployment control and create its first production deployment. Verify the target again before selecting files. Stop if the UI changes team/project, requests paid services/new agreements, or cannot deploy to this existing project.
 - No Git connection, automatic deployment pipeline, custom domain purchase, analytics activation, database, functions, payment or extension store submission is included.
 
@@ -24,7 +24,7 @@ Prepared 2026-10-26. **AWAITING APPROVAL. No upload or deployment performed.** T
 - Contains: 22 static English/Japanese/task/help HTML pages; five workflow guides; real interface screenshots; CSS/JS/brand assets; verified v0.4.0 beta ZIP; demo ZIP; 30 fictional demo PDFs; robots.txt and sitemap.xml; static vercel.json.
 - Excludes: repository history, tests, reports, credentials, user records, browser profiles, server code and installed dependencies.
 - Static Vercel configuration: framework=null, buildCommand empty, installCommand empty, outputDirectory='.'. Security headers and noindex for fixtures/downloads are copied from the reviewed repository configuration. Their actual enforcement must be checked after deployment.
-- Candidate rendering used an isolated production-mode config for review. This does not record owner approval. The repository's launch-config.json remains productionApproved=false and preview mode. No candidate bytes have left this computer.
+- Candidate rendering used an isolated production-mode config for review. This does not record owner approval. After explicit deployment approval and live verification, the repository's launch-config.json was synchronized to productionApproved=true and the approved public origin. The exact approved ZIP has now been uploaded to this existing project.
 
 ## Exact public claims
 

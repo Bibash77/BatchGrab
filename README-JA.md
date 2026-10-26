@@ -1,5 +1,7 @@
 # Batch Grab 0.4.0
 
+**公開サイト・無料ベータ:** [project-m1fyy.vercel.app](https://project-m1fyy.vercel.app/index-ja.html) · [導入手順](https://project-m1fyy.vercel.app/beta-ja.html)。Chromeウェブストアへの公開は準備中です。
+
 [English](README.md) · 無料のChrome拡張機能
 
 ウェブページの画像や文書を選び、名前を確認して保存できます。英語・日本語のUIに対応しています。アカウント、決済、Batch Grabへの利用状況送信はありません。

@@ -1,7 +1,7 @@
 {
   "productVersion": "0.4.0",
-  "mode": "preview",
-  "publicOrigin": "",
+  "mode": "public",
+  "publicOrigin": "https://project-m1fyy.vercel.app",
   "productZipSha256": "60a442a92b7576b633718fba672471c120ac17d4f8b79cf436ae6c4f8975f63d",
   "screenshotHashes": {
     "images-picker.png": "5ec8a494bf2f9739a3de4960f00119d6bacd9a6bda566670eaf7ab6c82b90e46",
@@ -11,8 +11,6 @@
     "source-index-outcomes.png": "f15499eed83e07de54c4cf0a6dfc57eb7e0bf56135179ec36cd771bdcb99e5b4"
   },
   "launchBlockers": [
-    "Owner production/privacy approval pending",
-    "Verified approved public origin pending",
     "Store submission/approval and real listing URL pending; honest ZIP beta fallback available"
   ],
   "analytics": false,
