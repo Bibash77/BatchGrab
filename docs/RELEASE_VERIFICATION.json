@@ -1,0 +1,191 @@
+{
+  "asOf": "2026-10-26",
+  "version": "0.4.0",
+  "status": "passed",
+  "browser": "Chrome for Testing 156.0.8078.4",
+  "playwright": "1.64.1",
+  "pureAssertions": {
+    "naming": 23,
+    "visual": 19,
+    "securityCategoriesPassed": true,
+    "storageFailureRollbackPassed": true
+  },
+  "controlledCases": [
+    {
+      "case": "gallery",
+      "scanAndDraftMs": 536.333875,
+      "browser": "156.0.8078.4",
+      "version": "0.4.0",
+      "classification": {
+        "content": 6,
+        "logo": 1,
+        "icon": 2,
+        "thumbnail": 1,
+        "decorative": 2,
+        "review": 0
+      },
+      "loadedPreviewVerified": true,
+      "suggestedItems": 8,
+      "assetItems": 6,
+      "uncertainNamesRequireAcceptance": true,
+      "actionVisibleWithPanelsExpanded": true,
+      "outcomesVisibleAboveFooter": true,
+      "actionVisibleWithoutScrolling": true,
+      "queuedAtClose": 5,
+      "downloadMs": 645.5011669999999,
+      "completed": 8,
+      "failed": 0,
+      "acceptedNameOutputsVerified": true,
+      "popupClosureVerified": true,
+      "status": "passed"
+    },
+    {
+      "case": "catalogue",
+      "scanAndDraftMs": 538.7522499999995,
+      "browser": "156.0.8078.4",
+      "version": "0.4.0",
+      "smallProductPhotosInSuggested": 12,
+      "status": "passed"
+    },
+    {
+      "case": "large-gallery",
+      "scanAndDraftMs": 731.6609170000002,
+      "browser": "156.0.8078.4",
+      "version": "0.4.0",
+      "largeDraftNotCached": true,
+      "pageSwitchMs": 10.331125000000611,
+      "searchMs": 206.13525000000027,
+      "images": 5000,
+      "maxRenderedCards": 60,
+      "batchLimitVerified": true,
+      "searchVerified": true,
+      "status": "passed"
+    },
+    {
+      "case": "index",
+      "scanAndDraftMs": 550.3459169999996,
+      "browser": "156.0.8078.4",
+      "version": "0.4.0",
+      "queuedAtClose": 27,
+      "downloadMs": 2024.251792,
+      "completed": 30,
+      "failed": 0,
+      "exactNamesAndFolders": 30,
+      "popupClosureVerified": true,
+      "status": "passed"
+    },
+    {
+      "case": "edge-cases",
+      "scanAndDraftMs": 539.5858750000007,
+      "browser": "156.0.8078.4",
+      "version": "0.4.0",
+      "queuedAtClose": 4,
+      "downloadMs": 419.4879999999994,
+      "completed": 5,
+      "failed": 2,
+      "retryRecovered": true,
+      "retrySummaryVerified": true,
+      "popupClosureVerified": true,
+      "status": "passed"
+    }
+  ],
+  "lifecycle": {
+    "status": "passed",
+    "complete": 120,
+    "duplicateChromeDownloads": 0,
+    "pendingAtStop": 113
+  },
+  "locales": {
+    "status": "passed",
+    "version": "0.4.0",
+    "chrome": "156.0.8078.4",
+    "languages": [
+      "en",
+      "ja"
+    ],
+    "realToolbarInteractions": true,
+    "japaneseDownload": true,
+    "unicodeFilename": "公開資料.pdf",
+    "unsupportedPage": true,
+    "invalidRegexAndReset": true,
+    "clearScanPreservesJobs": true,
+    "noTelemetry": true
+  },
+  "domSafety": {
+    "status": "passed",
+    "literalUnsafeLabelRenderedAsText": true,
+    "nonHttpScannerLinksExcluded": true,
+    "nonHttpQueueCommandRejected": true,
+    "unexpectedDownloads": 0,
+    "browser": "156.0.8078.4"
+  },
+  "discoveryRegression": "passed: real PDF/CSV/XLSX bytes, Japanese filenames, optional sources and bounded traversal",
+  "publicSmoke": [
+    "NASA gallery image completed",
+    "Books to Scrape catalogue image completed",
+    "IRS Form W-9 PDF completed"
+  ],
+  "website": {
+    "status": "passed",
+    "browser": "156.0.8078.4",
+    "pages": 22,
+    "widths": [
+      375,
+      768,
+      1440
+    ],
+    "brokenLinks": 0,
+    "fixturePdfLinks": 30,
+    "pageErrors": 0,
+    "externalRequests": 0,
+    "forms": 0,
+    "realBetaZipHash": true,
+    "localMetricHooks": true,
+    "verifiedStoreCTA": "Synthetic configuration wiring tested only; real URL pending",
+    "productionSeoAndPreviewIsolation": true,
+    "vercelConfig": "static validation passed; no external deployment/build service contacted",
+    "accessibility": "One H1, image alternatives, skip link, semantic labels and responsive overflow checked; not a full WCAG audit",
+    "adoptionDataCollected": false,
+    "vercelEnvironmentBuild": "VERCEL=1 preview build passed locally without host zip binary dependency; no hosted deployment"
+  },
+  "releaseArchive": {
+    "status": "passed",
+    "version": "0.4.0",
+    "files": 14,
+    "allowlistedFiles": [
+      "_locales/en/messages.json",
+      "_locales/ja/messages.json",
+      "background.js",
+      "i18n.js",
+      "icons/icon-128.png",
+      "icons/icon-16.png",
+      "icons/icon-32.png",
+      "icons/icon-48.png",
+      "lib.js",
+      "manifest.json",
+      "popup.css",
+      "popup.html",
+      "popup.js",
+      "queue-policy.js"
+    ],
+    "sha256": "60a442a92b7576b633718fba672471c120ac17d4f8b79cf436ae6c4f8975f63d",
+    "sourceArchiveHashesMatch": true,
+    "storeCandidateIdentical": true,
+    "credentialPatternsFound": 0,
+    "testsProfilesDocumentsInRuntime": false,
+    "icon128": "128x128 RGBA; 96px content and 16px transparent padding rendered by asset script",
+    "note": "Pattern/allowlist review is not a proof of absence of all private data or security defects."
+  },
+  "deploymentPerformed": false,
+  "storeSubmitted": false,
+  "actualAdoptionMeasured": false,
+  "telemetryEnabled": false,
+  "paymentsImplemented": false,
+  "limitations": [
+    "Older supported Chrome versions not certified",
+    "Full browser shutdown/OS suspend not certified",
+    "Not a full WCAG audit",
+    "Static Vercel configuration tested locally; no external deployment verified",
+    "Native Chrome diagnostics and page text remain in original language"
+  ]
+}

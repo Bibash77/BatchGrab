@@ -1,14 +1,24 @@
-# Batch Grab first-customer launch kit
+# Batch Grab free launch kit — 0.4.0
 
-Local preview: http://127.0.0.1:8770/ (restart `node batch-grab/marketing/scripts/serve.cjs` from the project root if needed).
+The current offer is a free image/document collection extension. The earlier $5 material in archive/ and legacy 0.3.1 ZIPs is historical, not the active launch.
 
-Start with MARKETING_PLAN.md, then CUSTOMER_CHANNELS.md and LAUNCH_CHECKLIST.md. LAUNCH_CONTENT.md contains five complete educational posts, three community drafts, invitation/purchase copy and the recording script. CHROME_STORE_LISTING.md contains copy, permission/privacy drafts and account-dependent steps. FIRST_SALE_TRACKER.csv is deliberately header-only; CURRENT_STATUS.json records the known starting $0/0-customer state.
+Start with LAUNCH_CHECKLIST.md, MARKETING_PLAN.md, CHROME_STORE_LISTING.md and MEASUREMENT_PLAN.md. The existing CUSTOMER_CHANNELS.md is the earlier source shortlist; current conditional placements and free drafts are in LAUNCH_CONTENT.md. Recheck rules before posting.
 
-- `site/`: actual portable static website; no server, API, analytics or payment dependency.
-- `dist/batch-grab-launch-site.zip`: deployable static files, including the original beta/demo ZIPs and fictional fixture.
-- `dist/batch-grab-0.3.1-store-candidate.zip`: separate icon-only candidate; original verified beta untouched.
-- `store-assets/`: three actual-screenshot graphics, small tile and icons.
-- `output/playwright/`: real local marketing QA screenshots and pass/fail evidence. QA draft content is not a lead or customer and must never enter the sales tracker.
-- `launch-config.json`: public contact email/brand; actual public URL pending. Preview mode is intentionally noindex until approval.
+`src/` contains the existing site's static source/design, now free-first. `locales/en.json` and `locales/ja.json` supply core onboarding content; `scripts/prepare-pages.py` generates essential bilingual pages and the retained educational articles. `site/` is the deployable static output. `../vercel.json` configures Vercel from the repository root. `launch-config.json` defaults to unapproved preview with no store URL and no analytics. Do not enable production with a fictional origin.
 
-All external publishing, messages, purchases and scheduling still require explicit owner approval. No external action was performed. Support email was supplied by the owner; never scrape or mass-message contacts.
+Local commands from repository root:
+
+```sh
+python3 marketing/scripts/prepare-pages.py
+node marketing/scripts/build-site.cjs
+node marketing/scripts/serve.cjs
+node marketing/scripts/verify-site.cjs
+node marketing/scripts/capture-store-assets.cjs
+node scripts/build.cjs
+node marketing/scripts/prepare-store.cjs
+node tests/verify-package.cjs
+```
+
+Store capture updates icon source assets, so rebuild the extension afterward. Site screenshots are actual controlled-fixture captures, committed under src/assets for reproducible website builds; refresh them only from current browser evidence. No AI-created product screenshots.
+
+No deployments, store submissions, posts, email campaigns, measurements or payments are performed by these scripts. Website measurement hooks remain in page memory; they are not a collected analytics service. Tracker templates contain no users/results. Place any actual participant data under ignored private/ and obtain consent.

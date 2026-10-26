@@ -1,79 +1,66 @@
-# Chrome Web Store listing and publication draft
+# Chrome Web Store submission draft — 0.4.0, free
 
-Prepared 2026-10-22. **Not uploaded, submitted, reviewed or published.** The original verified beta package is unchanged. A separate icon-only store candidate adds brand assets to the manifest; its five other runtime files are byte-identical, and real Chrome load/30-document scanning passed. The owner must approve publisher identity, privacy wording, final distribution/license and submission.
+Status: ready for owner review/upload; not submitted, approved or publicly listed.
 
-## Listing copy to paste
+Name: Batch Grab (matches the localized manifest)
 
-**Name:** Batch Grab (matches the package name).
+Short description: Preview and download webpage images and documents. Review filenames, organize folders, and check actual download results.
 
-**Short description (102 characters):** Download accessible web documents with reviewed names, section folders and a local source/outcome CSV.
+Category suggestion: Workflow & Planning / Productivity, subject to the live dashboard categories.
 
-**Suggested category:** the relevant productivity/workflow category offered by the current dashboard; inspect current choices, do not fabricate an exact category label.
+## English description
 
-**Language:** English. **Version:** 0.3.1. **Contact:** ronaldoibibash310@gmail.com. Publisher display name must be confirmed through the owner’s actual developer account; website brand “Batch Grab” is not a claimed registered legal identity.
+Collect the useful files from the webpage you have open.
 
-### Long description
+Batch Grab is a free Chrome extension for two everyday tasks: selecting webpage images and collecting organized web documents. No account or subscription.
 
-Batch Grab helps you prepare a readable document folder from an accessible webpage.
+1. Open a normal webpage and click Batch Grab.
+2. Preview images or switch to Documents. Select the files you need.
+3. Review filenames in Details & name, then Download Selected.
+4. Check completed, pending and failed outcomes and actual saved paths.
 
-Open a page containing report or attachment links, scan it, review document names and section folders, select the files you need, and download them through Chrome. The local source-and-outcome CSV connects original page/URL references with actual saved paths and reported outcomes.
+Image previews include known source dimensions and filenames. Suggested separates likely content from logos, icons and decorative assets; Review and All files keep uncertain resources accessible. Image name proposals show their page evidence and require your acceptance.
 
-Document Handoff beta features:
+Document names use visible link text and relevant nearby labels. Advanced options retain folders, templates, file types, width/regex filters, optional extended image discovery and local source/outcome CSV export.
 
-- Editable filename suggestions from visible link text, relevant nearby labels and page sections.
-- Visual file selection, with Documents, Images, Review, Site assets and All files views.
-- Advanced type/search/width/regex filters, filename templates and editable subfolders.
-- Background jobs that remain after popup closure while Chrome stays running.
-- Actual Chrome completed/failed states and manual failed-attempt retry.
-- A locally saved CSV with source URLs, names, actual paths, outcomes and timestamps.
+English and Japanese interface. Processing stays in your Chrome profile. Image previews and downloads contact their source websites. No Batch Grab account, naming service, ads or extension telemetry.
 
-Names and classification are rule-based suggestions. Batch Grab does not read inside PDFs or verify document contents. Chrome’s completed status means a response was saved, not that it was the intended file.
+Limits: accessible HTTP(S) resources on the current page only. No paywall/login bypass, crawling, automatic scrolling, conversion or streaming-video capture. Page-based classification and naming can be wrong. Completed means Chrome saved the response; check important file contents. Keep Chrome running after jobs are accepted. Browser shutdown/OS sleep recovery is not certified. 500 files per batch, 1,000 pending jobs, 10,000 scan results.
 
-Limits: 500 files per batch, 1,000 pending jobs and 10,000 scan results. No combined multi-page collection, spreadsheet/URL import, ZIP, conversion or paywall/CAPTCHA/subscription bypass. Page markup and resource access vary. Browser shutdown/OS suspension and every site/device are not certified.
+## Japanese listing
 
-This is beta 0.3.1. Evaluation is free. A $5 one-time delivered-version Document Handoff offering is being evaluated; payment infrastructure is not active. No subscription, checkout or automatic charge is included. We do not claim customer results or guaranteed savings.
+名称: Batch Grab（マニフェストと同じ）
 
-## Single purpose / permission justifications
+概要: ウェブページの画像・文書を選択して保存。ファイル名やフォルダーを確認し、実際のダウンロード結果を表示します。
 
-**Single purpose:** Help users collect and organize downloadable resources from a webpage they invoke the extension on, with reviewable names and a local download-outcome record. Document Handoff is the focused marketing workflow; image selection serves the same collection purpose.
+本文:
 
-| Permission | Draft justification reflecting actual code |
-|---|---|
-| activeTab | Temporary access to the page the user invokes Batch Grab on, to read resource URLs and document/image context |
-| scripting | Inject the packaged scanner into that authorized page to inspect exposed links, labels and accessible page roots |
-| downloads | Start user-selected transfers, inspect Chrome IDs/status/errors/actual filenames and export the local CSV |
-| storage | Retain local drafts, selections, job metadata and outcome history so accepted jobs survive popup closure |
-| alarms | Periodically wake queue reconciliation and resume/reconcile pending work while Chrome is running |
+今開いているページから、必要な画像や文書を選んで保存できます。無料・アカウント不要です。
 
-No persistent all-sites host permission, clipboard permission, account access or AI service is requested by 0.3.1. **Remote code:** No; scanner and runtime are packaged. Fetching source images/files is not loading remotely hosted executable code. No eval/remote script dependency was added.
+ページでBatch Grabを開き、プレビューや「文書」でファイルを選びます。「詳細・名前」で候補を確認し、保存します。実際の保存先、完了、処理中、失敗を結果で確認できます。
 
-## Privacy practices — describe handling, not “no data exists”
+画像のサイズと取得元を表示し、コンテンツ候補をロゴや装飾画像と分類します。不確かな画像は「要確認」や「すべて」で確認できます。画像名の候補は確認してから適用します。文書名はリンクや近くのラベルを利用します。詳細設定にはフォルダー、テンプレート、フィルター、CSV出力があります。
 
-The extension handles selected page URLs, link/nearby text, headings, image metadata, chosen names/folders, download identifiers, actual paths, status/errors and timestamps. They stay in local extension storage or user-exported files. Original hosts receive ordinary preview/download requests. There is no Batch Grab telemetry/server, ads, cloud account or inference service.
+英語・日本語のUIに対応しています。処理は端末内で行い、Batch Grabへの利用状況送信はありません。プレビューや保存は元のサイトへ通信します。
 
-Use the live dashboard definitions to map this honestly. Website content and selected source URLs are handled locally. Do not automatically tick “no data” simply because there is no backend. If the dashboard distinguishes developer collection/transmission from local handling, describe that distinction and use the applicable fields; verify ambiguous categories with store guidance instead of guessing. No payment/financial/account data is handled by the extension. Website contact emails voluntarily sent to the publisher are a separate contact workflow described in the policy.
+通常のHTTP(S)ページが対象です。アクセス制限の回避、自動巡回、自動スクロール、変換、ストリーミング動画の取得は行いません。分類や名前は確認してください。「完了」は内容の正しさを保証しません。保存中はChromeを起動したままにしてください。ブラウザー終了やOS休止からの復旧は未認証です。
 
-Owner must review/certify the actual Limited Use/data-use statements. Do not submit certifications blindly or assume this draft guarantees acceptance. [Official privacy fields](https://developer.chrome.com/docs/webstore/cws-dashboard-privacy) and [User Data FAQ, including local-storage privacy-policy requirement](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq).
+## Single purpose and privacy tab
 
-**Privacy URL after approved hosting:** actual public `privacy.html` URL. The implemented draft explains processing, retention/deletion, original-host requests, CSV sensitivity, optional email contact and inactive payments. Owner still needs to approve final publisher/hosting/contact-retention wording and remove draft-review language before publication. Never use localhost as a store policy URL.
+Single purpose: select accessible files from the current webpage, review their names/folders, save them and inspect actual download results.
 
-## Graphics and packages prepared
+Permission justifications are in ../docs/SECURITY_AND_PRIVACY.md. Declare that the extension handles webpage URLs/context and download metadata locally; do not equate “not transmitted to the developer” with “no data handled.” Inspect current dashboard categories and answer consistently with the privacy policy. No sale, unrelated third-party transfer, advertising, credit, profiling or analytics use. No remote code.
 
-- `store-assets/01-review-names.jpg`, `02-check-outcomes.jpg`, `03-retain-sources.jpg`: 1280×800 full-canvas JPEGs containing unedited real beta screenshots and truthful captions, not fabricated UI.
-- `store-assets/small-promo-440x280.jpg`: brand/promise tile, not a fake screenshot or customer claim.
-- `store-assets/icon-128.png` and 16/32/48 variants: brand icons.
-- `dist/batch-grab-0.3.1-store-candidate.zip`: original runtime with only icon declarations/assets added. Not the same hash as the original beta ZIP; `store-submission/build.json` records the distinction. `store-submission/verification.json` records Chrome load and 30-card scan.
-- `site/downloads/batch-grab-0.3.1-beta.zip`: the unchanged, previously verified six-file beta used for free developer-mode evaluation. Keep the packages distinguishable.
+Privacy URL: pending approved real website origin + /privacy.html. Support URL: pending origin + /faq.html. Contact: ronaldoibibash310@gmail.com. Brand is Batch Grab; owner must confirm publisher identity and account declarations.
 
-[Official image requirements](https://developer.chrome.com/docs/webstore/images): at least one real-experience screenshot, supported 1280×800 or 640×400 dimensions, square corners/full bleed. The dashboard can change and has the final validation; three screenshot assets, a small tile and a 128 icon are supplied here. Do not claim approval of these graphics.
+## Submission files
 
-## Owner-account publication sequence
+Upload `../dist/batch-grab-0.4.0-production.zip` (relative to marketing). Root manifest, runtime JS/CSS/HTML, en/ja messages and four PNG icons only. `store-submission/batch-grab` is an identical unpacked copy. Build hashes document consistency.
 
-1. Sign into the intended [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole). Confirm publisher/account eligibility and current verification/security requirements. Registration can involve a one-time fee; inspect the actual amount/currency and obtain explicit paid-action approval before paying. None has been paid in this task. [Official registration](https://developer.chrome.com/docs/webstore/register/).
-2. Approve final distribution/license and public URLs. Confirm no same-or-higher version has already been published to the intended extension item; if there is one, prepare an appropriately versioned candidate and reverify.
-3. Upload the separate store candidate as a **draft** using owner account access. Paste copy, approved privacy URL, permission justifications and graphics. Inspect every preview and dashboard warning.
-4. Choose the owner-approved public/unlisted/testing distribution and review instructions. Start with a fictional public fixture, no credentials required. Beta availability does not mean review exemption.
-5. Obtain explicit approval for submission/release. Follow the current dashboard review/publish controls; do not click Submit for review/Publish automatically, pay a fee or change visibility without approval. [Official publishing steps](https://developer.chrome.com/docs/webstore/publish).
-6. After actual approval/publication, record the literal listing URL, verify installation/description/permissions in a clean profile, and update the website’s installation CTA. Do not invent a store URL or promise a review deadline.
+Store screenshots: `store-assets/01-collect-images.jpg`, `02-organize-documents.jpg`, `03-check-outcomes.jpg`, `04-japanese.jpg`, each 1280×800. They frame actual extension captures on fictional fixtures; captions disclose this. Optional tile: `small-promo-440x280.jpg`. Icon: `icon-128.png`, transparent padding with 96×96 brand content. No testimonials, usage counts, guaranteed savings or protected-site claims.
 
-Current blockers are owner account/identity, approved public deployment/policy/distribution terms and explicit submission/publication approval. Draft copy, assets, verified beta and icon-only submission candidate are ready locally; no external store state was created.
+## Owner steps
+
+Sign into the [developer dashboard](https://chrome.google.com/webstore/devconsole), complete publisher registration/verification and any displayed fee only with owner approval. Upload ZIP, select distribution, fill English/Japanese listing and privacy fields, add actual policy/support URLs and screenshots, test the uploaded version, then explicitly approve submission/review/publication. Copy the real public listing URL only after verifying its title, publisher and version. Do not generate a fake URL or use an unpacked ID.
+
+References: [publishing](https://developer.chrome.com/docs/webstore/publish), [images](https://developer.chrome.com/docs/webstore/images), [privacy FAQ](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq). Requirements may change; check the dashboard at submission time.

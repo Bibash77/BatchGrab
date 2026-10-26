@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "version": "0.4.0",
+  "files": 14,
+  "allowlistedFiles": [
+    "_locales/en/messages.json",
+    "_locales/ja/messages.json",
+    "background.js",
+    "i18n.js",
+    "icons/icon-128.png",
+    "icons/icon-16.png",
+    "icons/icon-32.png",
+    "icons/icon-48.png",
+    "lib.js",
+    "manifest.json",
+    "popup.css",
+    "popup.html",
+    "popup.js",
+    "queue-policy.js"
+  ],
+  "sha256": "60a442a92b7576b633718fba672471c120ac17d4f8b79cf436ae6c4f8975f63d",
+  "sourceArchiveHashesMatch": true,
+  "storeCandidateIdentical": true,
+  "credentialPatternsFound": 0,
+  "testsProfilesDocumentsInRuntime": false,
+  "icon128": "128x128 RGBA; 96px content and 16px transparent padding rendered by asset script",
+  "note": "Pattern/allowlist review is not a proof of absence of all private data or security defects."
+}

@@ -1,13 +1,22 @@
 {
-  "candidateVersion": "0.3.1",
-  "changes": "Only icon declarations/assets added to the manifest; five other runtime files byte-identical to beta.",
+  "candidateVersion": "0.4.0",
+  "changes": "Exact canonical production release, including English/Japanese locale files and padded PNG icons.",
   "runtimeHashes": {
-    "background.js": "f0691a90e59b2f53edb18d621b40344b23294b73f24f24dbd334d7107c1784d9",
-    "lib.js": "9c87259e8ca705dd029cadc76e3bdae7b4cf9db56a4a9d8dd36ba0e48c253933",
-    "popup.js": "f38c45afd23caef6e9924961f9bdd8754ddbe5da5a6cbe862e8afab8be355a14",
-    "popup.html": "ca37dedfc9041281a8da5418028de6ec23e16068b59762869b9a106331868ae8",
-    "popup.css": "97f877e7c71606f3818748be9fab31d8c667ddda7e923ade0cb7fbb1d76ca867"
+    "_locales/en/messages.json": "8cb1b845c6c5bbadeed74d1ec8979d31b5538769d604d11b24c9a45c9b592725",
+    "_locales/ja/messages.json": "4aa80c6c1bf5fa48c087cfc83245e4271c933766a4174f7c5c24118a522b6b23",
+    "background.js": "31a6201f25b30b72760c89e3b05c013640a23510584c7257c4ef1232ac97c7a2",
+    "i18n.js": "f2b8b6ad7fb2251624b40280cdedc525e21acaf406ac0534ffb5a112ff419d99",
+    "icons/icon-128.png": "717fb22631185292d36568e3b9c749bc7846d6bd16bc48ba3294461c784a8321",
+    "icons/icon-16.png": "891c8a4d66150ec6ef84b106d1ac9a10ff465b5224c3893581d5d78e8089c597",
+    "icons/icon-32.png": "efbc55c3d9cfbf1e9325d846d2c9c7c68f5f25481c8c8f2f9a9334d72a0c0c5f",
+    "icons/icon-48.png": "b9a2bb62772e5014bcea3dbf4501cec3cc01bc5c7849f6e6f25b13a5840ca745",
+    "lib.js": "74a05da191030525e2208b6b25acb86e1ac47f6e4fa1a1fd1681f5d7303e117c",
+    "manifest.json": "7ed0d7ba2161f5c45bfd573d10b6928d372103a3e5bdb9b20491152de493d3a4",
+    "popup.css": "1ede3c0595fbe4ab7af804f9e853ae40c55b4b1db916dfdb965e9c4bf66a5f19",
+    "popup.html": "4bfbf176cf884b682fb6f66f7cffa3a646194ec40a8f82c908af3afaec5ee46b",
+    "popup.js": "43216555d1e039a889fb578d22f5bdb7e8ac0bbc251d32d9258b77b4f7915b55",
+    "queue-policy.js": "cf66f61c0cdf338bfd67086d4845d46bf5287ad44437bfa26053d093c6d9b411"
   },
-  "zipSha256": "cc63e55acabcd7764acdfbbcd00f921d0bcce4ff85d47cb43f305fcb52f97f3e",
+  "zipSha256": "60a442a92b7576b633718fba672471c120ac17d4f8b79cf436ae6c4f8975f63d",
   "published": false
 }

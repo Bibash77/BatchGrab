@@ -1,1 +1,1 @@
-window.LAUNCH_CONFIG={"mode":"preview","publisherName":"Batch Grab","contactEmail":"ronaldoibibash310@gmail.com","publicOrigin":"","analytics":false,"priceUSD":5,"version":"0.3.1"};
+window.LAUNCH_CONFIG={"mode":"preview","productionApproved":false,"publisherName":"Batch Grab","contactEmail":"ronaldoibibash310@gmail.com","publicOrigin":"","analytics":false,"chromeStoreUrl":"","storeVerified":false,"version":"0.4.0"};

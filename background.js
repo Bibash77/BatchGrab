@@ -1,8 +1,9 @@
+import {trimHistory,minimalItem,ensureQueueBudget} from './queue-policy.js';
 import { prepareJobs } from './lib.js';
 const CONCURRENCY = 3;
 let jobs = [];
 let chain = Promise.resolve();
-const save = () => chrome.storage.local.set({ jobs });
+const save = () => { jobs=trimHistory(jobs); return chrome.storage.local.set({ jobs }); };
 function reconcile(job, download) {
   if (!download) { job.status = 'interrupted'; job.error = 'Chrome no longer has this download record.'; return; }
   job.status = download.state;
@@ -11,7 +12,8 @@ function reconcile(job, download) {
   job.finishedAt = download.endTime || '';
 }
 const ready = (async () => {
-  jobs = (await chrome.storage.local.get('jobs')).jobs || [];
+  await chrome.storage.local.setAccessLevel({accessLevel:'TRUSTED_CONTEXTS'});
+  jobs = trimHistory((await chrome.storage.local.get('jobs')).jobs || []);
   for (const job of jobs) {
     if (job.status === 'starting') {
       job.status = 'interrupted';
@@ -56,16 +58,17 @@ function serial(fn) {
   return result;
 }
 chrome.runtime.onMessage.addListener((message, sender, respond) => {
-  if (sender.id !== chrome.runtime.id) return;
+  if (sender.id !== chrome.runtime.id || sender.url !== chrome.runtime.getURL('popup.html')) return;
   serial(async () => {
     if (message.type === 'enqueue') {
       if (!Array.isArray(message.items) || !message.items.length || message.items.length > 500) throw new Error('Select between 1 and 500 files per batch.');
       if (jobs.filter(j => ['queued', 'starting', 'in_progress'].includes(j.status)).length + message.items.length > 1000) throw new Error('Queue limit reached. Wait for current downloads to finish.');
       const batchId = crypto.randomUUID();
       const occupied = jobs.filter(j => ['queued', 'starting', 'in_progress'].includes(j.status)).map(j => j.path);
-      const added = prepareJobs(message.items, message.root, occupied).map(item => ({ ...item, id: crypto.randomUUID(), batchId, status: 'queued', createdAt: new Date().toISOString() }));
-      jobs.push(...added);
-      await save(); // Durable acknowledgement: popup may close immediately after the reply.
+      const added = prepareJobs(message.items.map(minimalItem), String(message.root || '').slice(0,1000), occupied).map(item => ({ ...item, id: crypto.randomUUID(), batchId, status: 'queued', createdAt: new Date().toISOString() }));
+      ensureQueueBudget([...jobs,...added]);
+      const previousJobs=jobs; jobs=[...jobs,...added];
+      try { await save(); } catch(error) { jobs=previousJobs; throw error; } // Durable acknowledgement: popup may close immediately after the reply.
       await chrome.alarms.create('queue-reconcile', { periodInMinutes: 1 });
       await pump();
       return { batchId, accepted: added.length };
@@ -74,9 +77,10 @@ chrome.runtime.onMessage.addListener((message, sender, respond) => {
       const old = jobs.find(j => j.id === message.id && j.status === 'interrupted' && !j.retried);
       if (!old) throw new Error('Only failed downloads can be retried once per attempt.');
       if (jobs.filter(j => ['queued', 'starting', 'in_progress'].includes(j.status)).length >= 1000) throw new Error('Queue limit reached.');
-      jobs.push({ ...old, id: crypto.randomUUID(), status: 'queued', error: '', downloadId: undefined, actualFilename: '', finishedAt: '', createdAt: new Date().toISOString() });
+      const retryJob = { ...old, id: crypto.randomUUID(), status: 'queued', error: '', downloadId: undefined, actualFilename: '', finishedAt: '', createdAt: new Date().toISOString() };
+      ensureQueueBudget([...jobs,retryJob]);const previousJobs=jobs;const previousRetried=old.retried;jobs=[...jobs,retryJob];
       old.retried = true;
-      await save();
+      try { await save(); } catch(error) { jobs=previousJobs;old.retried=previousRetried;throw error; }
       await pump();
     }
     if (message.type === 'clearFinished') { jobs = jobs.filter(j => ['queued', 'starting', 'in_progress'].includes(j.status)); await save(); }

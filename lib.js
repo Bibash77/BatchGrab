@@ -62,7 +62,7 @@ export function prepareJobs(items, root = "Batch Grab", occupied = []) {
   const used = new Set(occupied.map((s) => s.normalize("NFKC").toLowerCase()));
   return items.map((item) => {
     const url = new URL(item.url);
-    if (!/^https?:$/.test(url.protocol)) throw new Error("Only HTTP and HTTPS downloads are supported.");
+    if (!/^https?:$/.test(url.protocol) || url.username || url.password) throw new Error("Only HTTP and HTTPS downloads are supported.");
     const ext = item.ext && /^[a-z0-9]{1,8}$/i.test(item.ext) ? item.ext : "";
     let name = safeFilename(item.name, ext);
     const folder = safeFolder([safeFolder(root), safeFolder(item.folder)].filter(Boolean).join("/"));
@@ -258,7 +258,7 @@ export function imageSuggestion(item) {
 }
 
 export function enrichItem(raw) {
-  const parsed = parseUrl(raw.url); if (!parsed) return null;
+  const parsed = parseUrl(raw.url); if (!parsed || !/^https?:/.test(parsed.url)) return null;
   const hinted = parseUrl(`https://hint.invalid/${raw.downloadName || ''}`)?.ext;
   if (!Object.values(GROUPS).flat().includes(parsed.ext)) {
     if (hinted && Object.values(GROUPS).flat().includes(hinted)) parsed.ext = hinted;

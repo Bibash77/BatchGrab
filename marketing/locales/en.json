@@ -1,0 +1,100 @@
+{
+  "home": "Collect useful files.<br><em>Keep the context.</em>",
+  "lead": "A free Chrome extension for selecting webpage images and collecting organized documents. Preview files, review names, and see what actually downloaded.",
+  "nav": [
+    "How to use",
+    "Images",
+    "Documents",
+    "FAQ",
+    "日本語"
+  ],
+  "cta": "Try the free beta",
+  "demo": "See the workflow",
+  "eyebrow": "Free · Local-first · No account",
+  "notice": "Preview — not yet publicly launched",
+  "support": "Contact",
+  "steps": [
+    "Open a webpage",
+    "Select useful files",
+    "Download and check results"
+  ],
+  "stepCopy": [
+    "Use a normal HTTP(S) page with accessible images or document links.",
+    "Open Batch Grab. Preview images or switch to Documents. Review names in Details & name.",
+    "Click Download Selected. Wait for jobs-saved confirmation. Results show completed, pending and failed attempts."
+  ],
+  "caption": "Actual 0.4.0 interface on fictional controlled fixtures.",
+  "install": "Start with a small task",
+  "limits": "Works with exposed HTTP(S) resources. No protected-content bypass, crawling, automatic scrolling, conversion or streaming-video capture. Classification and naming use page context and can be wrong.",
+  "access": "Chrome Web Store publication is pending. The developer-mode ZIP is an optional beta alternative, not a store-reviewed release.",
+  "download": "Download free beta 0.4.0",
+  "onboard": "From webpage to saved files",
+  "faqTitle": "Answers before your first download",
+  "privacyTitle": "Privacy and permissions",
+  "lang": "English",
+  "copy_ja": "ja",
+  "copy_free_image_and_document_collection_with_batch_grab": "Free image and document collection with Batch Grab.",
+  "copy_skip_to_content": "Skip to content",
+  "copy_main_navigation": "Main navigation",
+  "copy_no_account_no_payments_no_extension_telemetry": "No account. No payments. No extension telemetry.",
+  "copy_names_you_can_review_br_results_you_can_check": "Names you can review.<br>Results you can check.",
+  "copy_use_labels_from_the_page_to_review_document_names_and_o": "Use labels from the page to review document names and organize folders. Image name proposals show their evidence and require your acceptance. Advanced options and source/outcome CSV remain available.",
+  "copy_free_image_and_document_downloader": "Free image and document downloader",
+  "copy_unzip_the_beta_into_a_folder_you_can_keep_open_chrome_e": [
+    "Unzip the beta into a folder you can keep.",
+    "Open chrome://extensions in desktop Chrome. Enable Developer mode.",
+    "Choose Load unpacked and select the folder containing manifest.json.",
+    "Pin Batch Grab from Chrome’s extension menu. Open a normal webpage and click its icon.",
+    "Choose English or 日本語 in the popup. Start with 3–5 files you are allowed to download."
+  ],
+  "copy_wait_for_existing_jobs_before_updating_reload_the_same_": "Wait for existing jobs before updating; reload the same unpacked folder. Keep Chrome running during downloads.",
+  "copy_please_share_only_a_short_task_description_or_redacted_": "Please share only a short task description or redacted error. Do not send private URLs, access tokens or client documents. No form collects data here.",
+  "copy_check_actual_results": "Check actual results",
+  "copy_wait_for_the_jobs_saved_confirmation_before_closing_the": "Wait for the jobs-saved confirmation before closing the popup. Keep Chrome running. Reopen Download outcomes to inspect failures and actual saved paths. Open important files to verify their contents; completed means Chrome saved the response, not that the file is correct.",
+  "copy_if_no_files_appear": "If no files appear",
+  "copy_try_images_review_or_all_files_clear_search_and_optiona": "Try Images, Review or All files. Clear search and optional filters. Scroll the source page to load lazy images, then Scan current page. Chrome settings and store pages cannot be scanned. A login or restricted resource may require access from the website.",
+  "copy_is_it_free_yes_this_release_has_no_account_checkout_sub": [
+    [
+      "Is it free?",
+      "Yes. This release has no account, checkout, subscription or paid license."
+    ],
+    [
+      "What permissions are requested?",
+      "activeTab and scripting scan only the page you invoke it on. downloads starts and checks transfers. storage saves local drafts and jobs. alarms reconciles the background queue. No persistent all-sites host permission is requested."
+    ],
+    [
+      "Does it contact any servers?",
+      "There is no Batch Grab backend or extension telemetry. Image previews and downloads contact their source websites, which receive ordinary network requests. Chrome controls their session and download behavior."
+    ],
+    [
+      "What is retained?",
+      "The latest page draft is kept locally until replaced, cleared in Options, or uninstall. Finished download history is limited to 500 attempts and 30 days, pruned on queue activity or worker startup. Pending jobs remain until resolved. Clear finished history removes settled records; exported and downloaded files are separate."
+    ],
+    [
+      "What are the limits?",
+      "500 files per batch, 1,000 pending jobs, 10,000 scan results and 60 rendered cards per page. A scan draft over 2 MB is not cached. Queue metadata is bounded at 4 MB; use smaller batches if needed."
+    ],
+    [
+      "Which websites work?",
+      "Normal HTTP(S) pages exposing image or document resources. Responsive candidates, common lazy attributes, open shadow DOM and accessible same-origin frames are scanned. Optional CSS/loaded resources are uncertain candidates. Closed shadow DOM, cross-origin frames, automatic scrolling and protected content are not supported."
+    ],
+    [
+      "Can I close the popup?",
+      "After jobs are accepted, yes; keep Chrome running. Popup closure and worker restart are tested. Full browser shutdown and OS suspension are not certified."
+    ],
+    [
+      "Does it understand documents?",
+      "No. Suggestions use page labels and heuristics. It does not read PDF contents or guarantee file correctness. Review names and uncertain image associations."
+    ],
+    [
+      "How do I change language?",
+      "Choose English or 日本語 in the extension header. Only interface text is translated; source labels and filenames stay unchanged."
+    ],
+    [
+      "How do I report a failure?",
+      "Email a redacted error and task summary. Do not send tokens, private URLs or documents. Check Chrome Downloads for the original error."
+    ]
+  ],
+  "copy_h2_extension_processing_h2_p_when_you_invoke_batch_grab": "<h2>Extension processing</h2><p>When you invoke Batch Grab, it reads exposed resource URLs, labels, headings, image context and dimensions on that page to display files and suggest names. Drafts, selected URLs, requested names, source pages, local saved paths, Chrome download IDs, statuses, errors and timestamps are stored in your local Chrome extension storage. They are used only for scanning, naming and download outcomes. No account or extension telemetry is enabled. Batch Grab does not sell or upload this data.</p><h2>Requests and exports</h2><p>Previews and downloads contact source hosts. Their normal network logs, sessions and access rules apply. Exporting CSV creates a local file containing source URLs and local paths; it can contain private tokens. Review before sharing.</p><h2>Retention and deletion</h2><p>The latest draft remains until replaced, cleared with Options → Clear saved scan, or uninstall. Settled attempts are capped at 500 and 30 days, pruned on queue activity or worker startup. Pending jobs are retained. Use Clear finished history for settled records. Removing the extension clears its local storage but does not remove downloaded files, exported CSV or Chrome’s own download records.</p><h2>Website and support</h2><p>This build enables no website analytics, tracking cookies or remote forms. The hosting provider may receive ordinary IP address and request logs; the owner must confirm the provider and its retention before publishing. Voluntary email is processed by your email provider and the publisher. Send only non-sensitive descriptions. Contact us to request deletion of support correspondence, subject to necessary records.</p><h2>Permissions and policy</h2><p>activeTab/scripting: scan the invoked page. downloads: save and inspect transfers. storage: local jobs and drafts. alarms: reconcile jobs. No persistent host access. Use of information received from Google APIs adheres to the Chrome Web Store User Data Policy, including Limited Use requirements. No browsing URLs, source documents or filenames are sent to analytics.</p>",
+  "copy_owner_review_before_publication": "Owner review before publication"
+}

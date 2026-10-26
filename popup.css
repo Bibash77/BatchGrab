@@ -2,3 +2,7 @@
 .content-label{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px}.content-label:empty{display:none}.filename{color:var(--muted);font-size:10px;font-weight:400}
 /* Give Chrome a stable preferred popup size; adapt the flex content to its actual viewport. */
 html{width:760px;height:600px;overflow:hidden}body{height:100vh;max-height:600px;padding-bottom:0;overflow:hidden}footer{position:static;width:auto;height:auto;flex-shrink:0}#scroller{min-height:0}#outcomes{max-height:120px;overflow:auto;flex-shrink:1}
+
+#onboarding{margin:0 16px 8px;padding:8px 10px;background:var(--wash);border-radius:7px;display:flex;align-items:center;gap:8px;font-size:11px}#onboarding span{flex:1}.language-control{font-size:10px;color:var(--muted);display:grid;gap:3px}select{font:inherit;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);padding:4px}body:lang(ja) nav button{font-size:11px}#source{max-width:400px}#forgetScan{margin-top:5px}
+/* Keep Download visible on Chrome's shorter popups, including expanded panels. */
+body.advanced-open #onboarding{display:none}#advanced{max-height:25vh;flex-shrink:1;min-height:0}#outcomes{max-height:18vh;min-height:24px}header,nav,.toolbar,.selection,.pager{flex-shrink:0}header{padding-top:8px;padding-bottom:6px}header h1 span{display:block;margin-left:0}#onboarding{flex-shrink:0}#onboarding button{white-space:normal}#onboarding span{min-width:0}#status{overflow-wrap:anywhere}

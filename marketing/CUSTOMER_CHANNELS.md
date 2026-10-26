@@ -241,3 +241,13 @@ The search did not establish ten current task-qualified customers asking to buy 
 - **Warm introductions:** potentially strongest buyer fit if a real task-qualified relationship exists, but none is assumed or contacted. Use the beta invitation only after approval or when the owner sends it.
 
 A link to an owned guide is still self-promotion where the community prohibits it. A public issue is not a contact list.
+
+## Free-launch update — October 26, 2026
+
+The old paid Document Handoff experiment is superseded by 0.4.0's free image/document workflow. Use the current MARKETING_PLAN.md and LAUNCH_CONTENT.md, not historical paid drafts.
+
+The [Q4 smallbusiness promotion thread](https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/promote_your_business_thread_for_q4_2026/) was rechecked: it explicitly permits offers in that thread, forbids repetitive spam, and its moderator notice rejects market-research/focus-group questions. Use a single disclosed product offer only after owner approval.
+
+[r/chrome_extensions](https://www.reddit.com/r/chrome_extensions/) remains a relevant conditional placement. Recheck current rules, flair, posting eligibility and moderation immediately before posting; presence of other promotional posts is not individual approval for ours. No moderator approval or authenticated posting eligibility has been obtained.
+
+Chrome Web Store search is now the primary launch channel once the real listing is approved. GitHub documentation and bilingual task guides support it. Nothing in this shortlist is a confirmed customer, active user or guaranteed acquisition channel.

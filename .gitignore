@@ -11,3 +11,5 @@ output/
 playwright-report/
 test-results/
 *profile*/
+# Consented participant/contact data must never be published
+marketing/private/

@@ -1,0 +1,437 @@
+{
+  "subtitle": {
+    "message": "無料 · 0.4.0"
+  },
+  "currentPage": {
+    "message": "現在のページ"
+  },
+  "scan": {
+    "message": "ページを再スキャン"
+  },
+  "views": {
+    "message": "ファイルの表示"
+  },
+  "suggested": {
+    "message": "おすすめ"
+  },
+  "images": {
+    "message": "画像"
+  },
+  "documents": {
+    "message": "文書"
+  },
+  "review": {
+    "message": "要確認"
+  },
+  "assets": {
+    "message": "サイト素材"
+  },
+  "allFiles": {
+    "message": "すべて"
+  },
+  "search": {
+    "message": "名前・ラベル・取得元で検索"
+  },
+  "searchFiles": {
+    "message": "ファイルを検索"
+  },
+  "options": {
+    "message": "設定"
+  },
+  "advanced": {
+    "message": "詳細フィルターと名前の設定"
+  },
+  "scannerHint": {
+    "message": "分類はページの情報に基づく推定です。「すべて」で全結果を確認できます。"
+  },
+  "extended": {
+    "message": "次のスキャンでCSS背景と読み込み済みの画像も含める"
+  },
+  "extendedHint": {
+    "message": "追加の候補は「要確認」に表示されます。レスポンシブ画像、開いたShadow DOM、アクセス可能な同一オリジンのフレームも対象です。自動スクロールや別オリジンへのアクセスは行いません。"
+  },
+  "minWidth": {
+    "message": "画像の最小幅"
+  },
+  "regex": {
+    "message": "正規表現フィルター（任意）"
+  },
+  "regexLabel": {
+    "message": "正規表現フィルター"
+  },
+  "rootFolder": {
+    "message": "ダウンロード先のフォルダー"
+  },
+  "template": {
+    "message": "ファイル名テンプレート"
+  },
+  "applyTemplate": {
+    "message": "適用"
+  },
+  "tokens": {
+    "message": "変数：{n} {name} {ext} {host} {date}。適用すると一致するファイルすべての名前が変わります。"
+  },
+  "restoreNames": {
+    "message": "文書名の候補に戻す"
+  },
+  "paths": {
+    "message": "保存先"
+  },
+  "suffixHint": {
+    "message": "同名ファイルがある場合、Chromeが番号を追加します。実際の保存先は結果で確認できます。"
+  },
+  "scanning": {
+    "message": "スキャン中…"
+  },
+  "selectMatching": {
+    "message": "表示条件に一致するものを選択"
+  },
+  "selectPage": {
+    "message": "このページを選択"
+  },
+  "clear": {
+    "message": "選択解除"
+  },
+  "found": {
+    "message": "検出されたファイル"
+  },
+  "previous": {
+    "message": "前へ"
+  },
+  "next": {
+    "message": "次へ"
+  },
+  "outcomes": {
+    "message": "ダウンロード結果"
+  },
+  "failures": {
+    "message": "失敗のみ表示"
+  },
+  "export": {
+    "message": "取得元・結果をCSVに保存"
+  },
+  "chromeDownloads": {
+    "message": "Chromeのダウンロード"
+  },
+  "clearHistory": {
+    "message": "完了・失敗の履歴を消去"
+  },
+  "noneSelected": {
+    "message": "0件選択"
+  },
+  "download": {
+    "message": "選択したファイルを保存"
+  },
+  "initial": {
+    "message": "必要なファイルを選択し、保存してください。"
+  },
+  "language": {
+    "message": "言語"
+  },
+  "firstRun": {
+    "message": "ウェブページを開く → 画像や文書を選択 → 保存。結果は下に表示されます。Chromeは起動したままにしてください。"
+  },
+  "gotIt": {
+    "message": "閉じる"
+  },
+  "forgetScan": {
+    "message": "保存済みのスキャンを消去"
+  },
+  "invalidRegex": {
+    "message": "正規表現が無効です。設定で修正するか、空欄にしてください。"
+  },
+  "saving": {
+    "message": "ジョブを保存中…"
+  },
+  "selected": {
+    "message": "$1件選択"
+  },
+  "pathCount": {
+    "message": "保存先（$1件）"
+  },
+  "batchLimit": {
+    "message": "1回につき500件まで選択できます。「このページを選択」で件数を減らせます。"
+  },
+  "selectFile": {
+    "message": "$1を選択"
+  },
+  "noPreview": {
+    "message": "プレビューなし"
+  },
+  "unknownSize": {
+    "message": "元画像のサイズは不明"
+  },
+  "details": {
+    "message": "詳細・名前"
+  },
+  "verifyDocument": {
+    "message": "ページのラベルによる文書名候補です。保存前に確認してください。"
+  },
+  "openSource": {
+    "message": "取得元を開く"
+  },
+  "foundVia": {
+    "message": "検出方法：$1"
+  },
+  "alternative": {
+    "message": "$1の別候補"
+  },
+  "filename": {
+    "message": "ファイル名"
+  },
+  "subfolder": {
+    "message": "サブフォルダー"
+  },
+  "fieldFor": {
+    "message": "$2の$1"
+  },
+  "reviewName": {
+    "message": "名前の候補を確認"
+  },
+  "uncertain": {
+    "message": "関連付けは未確認"
+  },
+  "possible": {
+    "message": "候補：$1"
+  },
+  "proposed": {
+    "message": "名前の候補：$1"
+  },
+  "useName": {
+    "message": "この名前を使う"
+  },
+  "emptyView": {
+    "message": "この表示条件では見つかりません。「画像」「要確認」「サイト素材」「すべて」も確認してください。"
+  },
+  "emptyPage": {
+    "message": "HTTP(S)のファイルが見つかりません。ページをスクロールして読み込み後、再スキャンしてください。"
+  },
+  "count": {
+    "message": "$1件表示 · $2件検出"
+  },
+  "limited": {
+    "message": "スキャン上限に到達"
+  },
+  "zeroResults": {
+    "message": "0件"
+  },
+  "range": {
+    "message": "$3件中 $1〜$2件"
+  },
+  "queueSummary": {
+    "message": "保存結果：完了 $1件 · 処理中 $2件 · 失敗 $3件"
+  },
+  "retriedCount": {
+    "message": "再試行済み $1件"
+  },
+  "complete": {
+    "message": "完了"
+  },
+  "interrupted": {
+    "message": "失敗"
+  },
+  "retried": {
+    "message": "失敗（別ジョブで再試行済み）"
+  },
+  "queued": {
+    "message": "待機中"
+  },
+  "starting": {
+    "message": "開始中"
+  },
+  "inProgress": {
+    "message": "保存中"
+  },
+  "retry": {
+    "message": "再試行"
+  },
+  "historyNote": {
+    "message": "$2件中$1件を表示。完了はChromeが応答を保存したことを示します。内容の正しさは確認してください。"
+  },
+  "scanCurrent": {
+    "message": "ページをスキャン中…"
+  },
+  "unsupported": {
+    "message": "通常のHTTP(S)ウェブページで開いてください。Chromeの設定やストアのページはスキャンできません。"
+  },
+  "scanLimited": {
+    "message": "スキャンの上限に達しました。一部のファイルや領域は対象外です。小さなページでお試しください。"
+  },
+  "scanHelp": {
+    "message": "必要なファイルを選択して保存してください。不確かな画像は「要確認」、名前の編集は「詳細・名前」で確認できます。"
+  },
+  "scanUnavailable": {
+    "message": "スキャンできません"
+  },
+  "scanDenied": {
+    "message": "このページをスキャンできません。通常のページを再読み込みして開き直してください。処理中のダウンロードは結果に残ります。"
+  },
+  "jobsAccepted": {
+    "message": "$1件を受け付けました。ポップアップは閉じても構いません。Chromeは起動したままにしてください。"
+  },
+  "allOutcomes": {
+    "message": "すべての結果を表示"
+  },
+  "noHistory": {
+    "message": "保存する履歴はまだありません。"
+  },
+  "exported": {
+    "message": "取得元一覧の保存を開始しました。URLに秘密のトークンが含まれる場合は共有しないでください。"
+  },
+  "clearedScan": {
+    "message": "保存済みのページ情報を消去しました。再スキャンで再開できます。"
+  },
+  "reset": {
+    "message": "検索・フィルターをリセット"
+  },
+  "historyEmpty": {
+    "message": "保存履歴はまだありません。上でファイルを選択し、保存してください。"
+  },
+  "evidence0": {
+    "message": "画像"
+  },
+  "evidence1": {
+    "message": "文書"
+  },
+  "evidence2": {
+    "message": "圧縮ファイル"
+  },
+  "evidence3": {
+    "message": "メディア"
+  },
+  "evidence4": {
+    "message": "その他"
+  },
+  "evidence5": {
+    "message": "ページ"
+  },
+  "evidence6": {
+    "message": "コンテンツ"
+  },
+  "evidence7": {
+    "message": "要確認"
+  },
+  "evidence8": {
+    "message": "ロゴ"
+  },
+  "evidence9": {
+    "message": "アイコン"
+  },
+  "evidence10": {
+    "message": "装飾"
+  },
+  "evidence11": {
+    "message": "サムネイル"
+  },
+  "evidence12": {
+    "message": "元のファイル名"
+  },
+  "evidence13": {
+    "message": "リンクのテキスト"
+  },
+  "evidence14": {
+    "message": "近くのラベル"
+  },
+  "evidence15": {
+    "message": "代替テキスト"
+  },
+  "evidence16": {
+    "message": "図のキャプション"
+  },
+  "evidence17": {
+    "message": "画像のタイトル"
+  },
+  "evidence18": {
+    "message": "近くのカードの見出し"
+  },
+  "evidence19": {
+    "message": "テンプレート"
+  },
+  "evidence20": {
+    "message": "名前またはラベルにロゴの語があります"
+  },
+  "evidence21": {
+    "message": "アイコンを示す名前、または小さなSVGです"
+  },
+  "evidence22": {
+    "message": "ページで装飾画像として指定されています"
+  },
+  "evidence23": {
+    "message": "非常に小さな画像です"
+  },
+  "evidence24": {
+    "message": "別解像度の候補です。サイズと関連性を確認してください"
+  },
+  "evidence25": {
+    "message": "追加の画像です。関連性と保存可否を確認してください"
+  },
+  "evidence26": {
+    "message": "非表示領域の画像です。関連性を確認してください"
+  },
+  "evidence27": {
+    "message": "小さな操作用画像です"
+  },
+  "evidence28": {
+    "message": "リンク先は画像ファイルです"
+  },
+  "evidence29": {
+    "message": "サムネイルを示す名前、または動画へのリンクです"
+  },
+  "evidence30": {
+    "message": "見出し付きのコンテンツまたは商品カードの画像です"
+  },
+  "evidence31": {
+    "message": "サムネイルを示す名前です。カードとの関連は不明です"
+  },
+  "evidence32": {
+    "message": "ナビゲーション以外の大きな画像です"
+  },
+  "evidence33": {
+    "message": "小さな画像です。必要に応じて選択してください"
+  },
+  "evidence34": {
+    "message": "サイズまたは文脈の情報が不足しています"
+  },
+  "evidence35": {
+    "message": "CSS背景"
+  },
+  "evidence36": {
+    "message": "読み込み済みリソース"
+  },
+  "extensionName": {
+    "message": "Batch Grab"
+  },
+  "extensionDescription": {
+    "message": "ウェブページの画像・文書を選択して保存。ファイル名やフォルダーを確認し、実際のダウンロード結果を表示します。"
+  },
+  "evidenceError0": {
+    "message": "1回につき1〜500件のファイルを選択してください。"
+  },
+  "evidenceError1": {
+    "message": "キューの上限に達しました。処理中のダウンロードが終わるまでお待ちください。"
+  },
+  "evidenceError2": {
+    "message": "失敗したダウンロードのみ再試行できます。各試行につき1回です。"
+  },
+  "evidenceError3": {
+    "message": "キューの上限に達しました。"
+  },
+  "evidenceError4": {
+    "message": "Chromeにこのダウンロードの記録がありません。"
+  },
+  "evidenceError5": {
+    "message": "再起動後に保存の開始を確認できませんでした。再試行前にChromeのダウンロードを確認してください。"
+  },
+  "evidenceError6": {
+    "message": "ダウンロードURLが無効、または長すぎます。"
+  },
+  "evidenceError7": {
+    "message": "認証情報を埋め込んでいないHTTP(S)のURLを使用してください。"
+  },
+  "evidenceError8": {
+    "message": "キューの保存容量の上限です。完了・失敗の履歴を消去するか、件数を減らしてください。"
+  },
+  "evidenceError9": {
+    "message": "HTTPとHTTPSのダウンロードに対応しています。"
+  }
+}

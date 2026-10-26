@@ -1,0 +1,437 @@
+{
+  "subtitle": {
+    "message": "Free · 0.4.0"
+  },
+  "currentPage": {
+    "message": "Current page"
+  },
+  "scan": {
+    "message": "Scan current page"
+  },
+  "views": {
+    "message": "File views"
+  },
+  "suggested": {
+    "message": "Suggested"
+  },
+  "images": {
+    "message": "Images"
+  },
+  "documents": {
+    "message": "Documents"
+  },
+  "review": {
+    "message": "Review"
+  },
+  "assets": {
+    "message": "Site assets"
+  },
+  "allFiles": {
+    "message": "All files"
+  },
+  "search": {
+    "message": "Search by name, label or source"
+  },
+  "searchFiles": {
+    "message": "Search files"
+  },
+  "options": {
+    "message": "Options"
+  },
+  "advanced": {
+    "message": "Advanced filters and naming"
+  },
+  "scannerHint": {
+    "message": "Original scanner and advanced controls. Site-asset classification is heuristic; all results remain available."
+  },
+  "extended": {
+    "message": "Include CSS backgrounds and already-loaded image resources on the next scan"
+  },
+  "extendedHint": {
+    "message": "Additional candidates appear in Review. Scans also include responsive candidates, open shadow DOM and accessible same-origin frames. No page scrolling or cross-origin access."
+  },
+  "minWidth": {
+    "message": "Min image width"
+  },
+  "regex": {
+    "message": "Optional regex filter"
+  },
+  "regexLabel": {
+    "message": "Regex filter"
+  },
+  "rootFolder": {
+    "message": "Root folder under Downloads"
+  },
+  "template": {
+    "message": "Filename template"
+  },
+  "applyTemplate": {
+    "message": "Apply template"
+  },
+  "tokens": {
+    "message": "Tokens: {n} {name} {ext} {host} {date}. Applying a template changes all matching names."
+  },
+  "restoreNames": {
+    "message": "Restore document naming suggestions"
+  },
+  "paths": {
+    "message": "Final paths"
+  },
+  "suffixHint": {
+    "message": "Existing disk files may receive Chrome suffixes. Actual saved paths appear in outcomes."
+  },
+  "scanning": {
+    "message": "Scanning…"
+  },
+  "selectMatching": {
+    "message": "Select matching"
+  },
+  "selectPage": {
+    "message": "Select this page"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "found": {
+    "message": "Files found"
+  },
+  "previous": {
+    "message": "Previous"
+  },
+  "next": {
+    "message": "Next"
+  },
+  "outcomes": {
+    "message": "Download outcomes"
+  },
+  "failures": {
+    "message": "Show failures"
+  },
+  "export": {
+    "message": "Export source & outcome CSV"
+  },
+  "chromeDownloads": {
+    "message": "Chrome Downloads"
+  },
+  "clearHistory": {
+    "message": "Clear finished history"
+  },
+  "noneSelected": {
+    "message": "0 selected"
+  },
+  "download": {
+    "message": "Download Selected"
+  },
+  "initial": {
+    "message": "Review the files you want, then download."
+  },
+  "language": {
+    "message": "Language"
+  },
+  "firstRun": {
+    "message": "Open a webpage → select images or documents → Download Selected. Results appear below; keep Chrome running."
+  },
+  "gotIt": {
+    "message": "Got it"
+  },
+  "forgetScan": {
+    "message": "Clear saved scan"
+  },
+  "invalidRegex": {
+    "message": "Invalid regex. Correct it in Options or clear that field."
+  },
+  "saving": {
+    "message": "Saving jobs…"
+  },
+  "selected": {
+    "message": "$1 selected"
+  },
+  "pathCount": {
+    "message": "Final paths ($1)"
+  },
+  "batchLimit": {
+    "message": "Select 500 files or fewer per batch. Use Select this page for smaller batches."
+  },
+  "selectFile": {
+    "message": "Select $1"
+  },
+  "noPreview": {
+    "message": "No preview"
+  },
+  "unknownSize": {
+    "message": "Source dimensions unknown"
+  },
+  "details": {
+    "message": "Details & name"
+  },
+  "verifyDocument": {
+    "message": "Document label suggestion — verify before saving"
+  },
+  "openSource": {
+    "message": "Open source"
+  },
+  "foundVia": {
+    "message": "Found via: $1"
+  },
+  "alternative": {
+    "message": "alternative of $1"
+  },
+  "filename": {
+    "message": "Filename"
+  },
+  "subfolder": {
+    "message": "Subfolder"
+  },
+  "fieldFor": {
+    "message": "$1 for $2"
+  },
+  "reviewName": {
+    "message": "Review suggested name"
+  },
+  "uncertain": {
+    "message": "uncertain association"
+  },
+  "possible": {
+    "message": "Possible: $1"
+  },
+  "proposed": {
+    "message": "Proposed: $1"
+  },
+  "useName": {
+    "message": "Use this name"
+  },
+  "emptyView": {
+    "message": "No files in this view. Try Images, Review, Site assets or All files; nothing was discarded."
+  },
+  "emptyPage": {
+    "message": "No HTTP(S) files found. Scroll the webpage to load more images, then scan again."
+  },
+  "count": {
+    "message": "$1 in view · $2 found"
+  },
+  "limited": {
+    "message": "scan limit reached"
+  },
+  "zeroResults": {
+    "message": "0 results"
+  },
+  "range": {
+    "message": "$1–$2 of $3"
+  },
+  "queueSummary": {
+    "message": "Downloads: $1 completed · $2 pending · $3 failed"
+  },
+  "retriedCount": {
+    "message": "$1 retried"
+  },
+  "complete": {
+    "message": "Completed"
+  },
+  "interrupted": {
+    "message": "Failed"
+  },
+  "retried": {
+    "message": "Failed attempt (retried separately)"
+  },
+  "queued": {
+    "message": "queued"
+  },
+  "starting": {
+    "message": "starting"
+  },
+  "inProgress": {
+    "message": "in progress"
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "historyNote": {
+    "message": "$1 of $2 records shown. Completed means Chrome saved the response, not that its content was validated."
+  },
+  "scanCurrent": {
+    "message": "Scanning current page…"
+  },
+  "unsupported": {
+    "message": "Open an HTTP(S) webpage and click Batch Grab. Chrome system/store pages cannot be scanned."
+  },
+  "scanLimited": {
+    "message": "A scan limit was reached. Narrow the source page; some files or page regions were not scanned."
+  },
+  "scanHelp": {
+    "message": "Select useful files, then Download Selected. Check Review for uncertain images and use Details & name to edit filenames."
+  },
+  "scanUnavailable": {
+    "message": "Scan unavailable"
+  },
+  "scanDenied": {
+    "message": "Chrome could not scan this page. Try a normal webpage, reload it, and reopen Batch Grab. Your pending downloads remain in Results."
+  },
+  "jobsAccepted": {
+    "message": "$1 jobs saved. You can close the popup; keep Chrome running."
+  },
+  "allOutcomes": {
+    "message": "Show all outcomes"
+  },
+  "noHistory": {
+    "message": "No download history to export yet."
+  },
+  "exported": {
+    "message": "Source index requested. It includes original URLs and actual outcomes; keep it private if sources contain tokens."
+  },
+  "clearedScan": {
+    "message": "Saved page scan cleared. Click Scan current page to start again."
+  },
+  "reset": {
+    "message": "Reset search and filters"
+  },
+  "historyEmpty": {
+    "message": "No downloads yet. Select a file above and choose Download Selected."
+  },
+  "evidence0": {
+    "message": "Images"
+  },
+  "evidence1": {
+    "message": "Documents"
+  },
+  "evidence2": {
+    "message": "Archives"
+  },
+  "evidence3": {
+    "message": "Media"
+  },
+  "evidence4": {
+    "message": "Other"
+  },
+  "evidence5": {
+    "message": "Pages"
+  },
+  "evidence6": {
+    "message": "content"
+  },
+  "evidence7": {
+    "message": "review"
+  },
+  "evidence8": {
+    "message": "logo"
+  },
+  "evidence9": {
+    "message": "icon"
+  },
+  "evidence10": {
+    "message": "decorative"
+  },
+  "evidence11": {
+    "message": "thumbnail"
+  },
+  "evidence12": {
+    "message": "Original filename"
+  },
+  "evidence13": {
+    "message": "Link text"
+  },
+  "evidence14": {
+    "message": "Nearby label"
+  },
+  "evidence15": {
+    "message": "Alt text"
+  },
+  "evidence16": {
+    "message": "Figure caption"
+  },
+  "evidence17": {
+    "message": "Image title"
+  },
+  "evidence18": {
+    "message": "Nearby card title"
+  },
+  "evidence19": {
+    "message": "Custom template"
+  },
+  "evidence20": {
+    "message": "Logo wording in filename or image label"
+  },
+  "evidence21": {
+    "message": "Icon wording or small SVG dimensions"
+  },
+  "evidence22": {
+    "message": "Page marks this image as decorative"
+  },
+  "evidence23": {
+    "message": "Tracking-sized image"
+  },
+  "evidence24": {
+    "message": "Alternative source resolution; dimensions and relevance need review"
+  },
+  "evidence25": {
+    "message": "Additional image source; relevance and downloadability need review"
+  },
+  "evidence26": {
+    "message": "Image is in hidden page markup; review its relevance"
+  },
+  "evidence27": {
+    "message": "Small navigation/control image"
+  },
+  "evidence28": {
+    "message": "Link points to an image file"
+  },
+  "evidence29": {
+    "message": "Thumbnail wording or linked video card"
+  },
+  "evidence30": {
+    "message": "Image belongs to a labelled content/product card"
+  },
+  "evidence31": {
+    "message": "Thumbnail wording without a specific content-card association"
+  },
+  "evidence32": {
+    "message": "Large image outside navigation"
+  },
+  "evidence33": {
+    "message": "Small image; may still be useful"
+  },
+  "evidence34": {
+    "message": "Insufficient size or context to classify confidently"
+  },
+  "evidence35": {
+    "message": "CSS background"
+  },
+  "evidence36": {
+    "message": "Loaded resource"
+  },
+  "extensionName": {
+    "message": "Batch Grab"
+  },
+  "extensionDescription": {
+    "message": "Preview and download webpage images and documents. Review filenames, organize folders, and check actual download results."
+  },
+  "evidenceError0": {
+    "message": "Select between 1 and 500 files per batch."
+  },
+  "evidenceError1": {
+    "message": "Queue limit reached. Wait for current downloads to finish."
+  },
+  "evidenceError2": {
+    "message": "Only failed downloads can be retried once per attempt."
+  },
+  "evidenceError3": {
+    "message": "Queue limit reached."
+  },
+  "evidenceError4": {
+    "message": "Chrome no longer has this download record."
+  },
+  "evidenceError5": {
+    "message": "Download start could not be confirmed after worker restart. Check Downloads before retrying."
+  },
+  "evidenceError6": {
+    "message": "Invalid or overly long download URL."
+  },
+  "evidenceError7": {
+    "message": "Use an HTTP(S) download URL without embedded credentials."
+  },
+  "evidenceError8": {
+    "message": "Queue storage limit reached. Clear finished history or use a smaller batch."
+  },
+  "evidenceError9": {
+    "message": "Only HTTP and HTTPS downloads are supported."
+  }
+}

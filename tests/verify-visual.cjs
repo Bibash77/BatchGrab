@@ -13,11 +13,11 @@ async function run(name,base){
  const begin=performance.now();let p=await popup(browser,info.id,page);
  const worker=c.serviceWorkers()[0]||await c.waitForEvent('serviceworker');
  const data=()=>worker.evaluate(()=>chrome.storage.local.get(['draft','jobs']));
- await until(async()=>{const d=await data();return d.draft?.source===page.url()&&d.draft.items?.length;},'scan and draft');
+ await until(async()=>{const d=await data();return d.draft?.source===page.url()&&(d.draft.items?.length || name==='large-gallery'&&d.draft.largeScan);},'scan and draft');
  result.scanAndDraftMs=performance.now()-begin;result.browser=c.browser().version();result.version=info.version;
  let draft=(await data()).draft;
  if(name==='large-gallery'){
-  assert.equal(draft.items.filter(i=>i.group==='Images').length,5000);
+  assert.equal(await p.eval(`document.querySelector('#count').textContent.includes('5,000')`),true);result.largeDraftNotCached=!!draft.largeScan;
   assert.equal(await p.eval(`document.querySelectorAll('#list .card').length`),60);
   const next=performance.now();await p.click('#next');await until(()=>p.eval(`document.querySelector('#pageInfo').textContent.startsWith('61–')`),'next page');result.pageSwitchMs=performance.now()-next;
   await p.click('#all');assert.equal(await p.eval(`document.querySelector('#selectedCount').textContent`),'5000 selected');assert(await p.eval(`document.querySelector('#go').disabled`));await p.click('#none');await p.click('#pageSelect');assert.equal(await p.eval(`document.querySelector('#selectedCount').textContent`),'60 selected');
@@ -33,7 +33,7 @@ async function run(name,base){
    assert.equal(await p.eval(`document.querySelectorAll('#list .card').length`),8);assert(await p.eval(`document.querySelector('#advanced').hidden`));assert(await p.eval(`(()=>{const b=document.querySelector('#go').getBoundingClientRect();return b.top>=0&&b.bottom<=innerHeight})()`));
    assert.equal(await p.eval(`document.querySelector('#list .card[data-url$="001.png"] [data-field=name]').value`),'001.png');
    for(const id of ['001','004','005']){await p.click(`#list .card[data-url$="${id}.png"] .review`);if(id==='004')assert((await p.eval(`document.querySelector('#list .card[data-url$="004.png"] .suggestion').textContent`)).includes('uncertain'));await p.click(`#list .card[data-url$="${id}.png"] [data-accept-name]`);}
-   await p.click('[data-view=assets]');assert.equal(await p.eval(`document.querySelectorAll('#list .card').length`),6);await p.screenshot('site-assets-separated.png');await p.click('[data-view=recommended]');await p.click('#all');await p.screenshot('gallery-picker.png');assert(await p.eval(`Array.from(document.querySelectorAll('#list .preview img')).some(i=>i.complete&&i.naturalWidth>0&&i.getBoundingClientRect().top<innerHeight)`));result.loadedPreviewVerified=true;
+   await p.click('[data-view=assets]');assert.equal(await p.eval(`document.querySelectorAll('#list .card').length`),6);await p.screenshot('site-assets-separated.png');await p.click('[data-view=images]');await p.screenshot('images-picker.png');await p.click('[data-view=recommended]');await p.click('#all');await p.screenshot('gallery-picker.png');assert(await p.eval(`Array.from(document.querySelectorAll('#list .preview img')).some(i=>i.complete&&i.naturalWidth>0&&i.getBoundingClientRect().top<innerHeight)`));result.loadedPreviewVerified=true;
    result.suggestedItems=8;result.assetItems=6;result.uncertainNamesRequireAcceptance=true;await p.click('#advancedToggle');await p.eval(`document.querySelector('#outcomes').open=true`);assert(await p.eval(`document.querySelector('#go').getBoundingClientRect().bottom<=innerHeight`));result.actionVisibleWithPanelsExpanded=true;await p.click('#advancedToggle');await p.eval(`document.querySelector('#outcomes').open=false`);assert(await p.eval(`document.querySelector('#queueSummary').getBoundingClientRect().bottom<=document.querySelector('footer').getBoundingClientRect().top`));result.outcomesVisibleAboveFooter=true;result.actionVisibleWithoutScrolling=true;
   }else if(name==='index'){
    await p.click('[data-view=documents]');assert.equal(await p.eval(`document.querySelectorAll('#list .card').length`),30);await p.click('#all');await p.screenshot('document-picker.png');

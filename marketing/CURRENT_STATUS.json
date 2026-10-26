@@ -1,9 +1,17 @@
 {
-  "asOf": "2026-10-22",
-  "confirmedCustomers": 0,
-  "confirmedRevenueUSD": 0,
-  "publicationsPerformedByAgent": 0,
-  "externalMessagesSentByAgent": 0,
-  "paymentInfrastructureActive": false,
-  "note": "Known starting state, not an estimate. QA visits and generated request drafts are excluded from the marketing tracker."
+  "asOf": "2026-10-26",
+  "version": "0.4.0",
+  "offer": "Free image and document collection",
+  "confirmedRealActivations": 0,
+  "activeUsersMeasured": false,
+  "repeatUsersMeasured": false,
+  "deploymentVerified": false,
+  "storeSubmissionPerformed": false,
+  "storeApprovalVerified": false,
+  "publicPostsPerformed": 0,
+  "externalMessagesSent": 0,
+  "websiteAnalyticsEnabled": false,
+  "extensionTelemetryEnabled": false,
+  "paymentsActive": false,
+  "note": "Known project state, not an adoption estimate. Engineering tests and QA visits are excluded."
 }
