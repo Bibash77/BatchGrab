@@ -12,7 +12,7 @@ Checked 2026-10-26 (Asia/Tokyo). States: NOT STARTED, PREPARED, AWAITING APPROVA
 | Chrome Web Store item | PREPARED | Draft mbeiingcdkhboociiidafkphfefkngoi, 0.4.0, English/Japanese, Tools, prepared assets and five explanations saved |
 | Chrome website URLs | PREPARED | Live homepage, /faq.html and /privacy.html saved in unpublished draft |
 | Publisher contact verification | BLOCKED | Owner corrected the address to ronaldobibash310@gmail.com; Google confirms a new verification email was sent there. Owner must follow the new link |
-| Public contact correction | AWAITING APPROVAL | Corrected local source and exact email-only replacement ZIP prepared; current live site still has earlier address until redeployment. See marketing/CONTACT_CORRECTION.md |
+| Public contact correction | BLOCKED | Owner approved exact email-only ZIP e65f09aad9d1b5a6d3b19dc34007698bd37f8a82c5f7adc31c922916413cd6f5. Existing project update requires a native file drag unsupported by browser tools. Owner asked to drag the ZIP onto the existing project; then agent can complete approved deployment. Current live site retains previous contact |
 | Final privacy declarations / certifications | AWAITING APPROVAL | Data categories and all three certifications untouched; exact proposed mapping in STORE_APPROVAL_PACKET.md; owner must review publisher trader/non-trader declaration |
 | Chrome review submission | NOT STARTED | No review submitted or public listing URL known; requires completed verification and explicit review-submission approval |
 | Store publication | NOT STARTED | No automatic/publication action approved |
@@ -48,7 +48,7 @@ Raw local results/screenshots: marketing/output/launch/live-verification.json, l
 
 ## Remaining owner actions
 
-1. Complete Google’s newly sent contact-email verification for **ronaldobibash310@gmail.com**. Owner explicitly corrected the earlier typo, superseding prior keep-address instructions. No codes or private inbox contents need to be shared. Approve the exact email-only website replacement in marketing/CONTACT_CORRECTION.md so the live contact matches.
+1. Complete Google’s newly sent contact-email verification for **ronaldobibash310@gmail.com**. Owner explicitly corrected the earlier typo, superseding prior keep-address instructions. No codes or private inbox contents need to be shared. The email-only website replacement in marketing/CONTACT_CORRECTION.md is approved; drag that ZIP onto the existing Vercel project to expose the deployment confirmation screen so the agent can finish.
 2. Review the publisher's existing trader/non-trader declaration and any required address/identity fields personally. No legal identity facts or declarations were invented or changed.
 3. Review exact listing/privacy/permissions in STORE_APPROVAL_PACKET.md; grant separate approval for final certifications and review submission. Current distribution settings observed: Free of charge, Public, All regions; unchanged. No approval for automatic publication has been assumed.
 4. Approve exact marketing content/destination separately before public posting. Store CTA remains honest developer-mode beta access until a real approved store URL is verified.
