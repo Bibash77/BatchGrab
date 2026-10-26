@@ -4,6 +4,10 @@ As of 2026-10-26: zero confirmed real activations or active-user measurements. E
 
 ## Definitions
 
+- First successful user: the first consenting real person with a confirmed usable download task from their own allowed webpage, excluding QA/fixtures.
+- First 10 activated users: ten distinct real people with such confirmations, counted cumulatively once each; this is separate from current activity.
+- Weekly active user (WAU): a distinct consenting participant with at least one confirmed successful real download task in the trailing 7 days. Report the observation window and coverage.
+- Returning user: a previously activated person with a successful task on another date; report returning-within-28-days separately from WAU.
 - Qualified visitor: has a real, permitted current-page image or document collection task in desktop Chrome.
 - Activation: a real person successfully saves their intended sample from their own task and confirms usable files/names. An install, accepted job or fixture test is not activation. Count each person once.
 - Active user: a unique consenting participant with at least one confirmed successful real download task in the trailing 28 days. Always report period and measurement coverage.

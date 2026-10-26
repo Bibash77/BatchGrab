@@ -16,12 +16,11 @@ if(config.mode==='public'){
 for(const [f,expected]of Object.entries(build.files))if(hash(fs.readFileSync(path.join(product,f)))!==expected)throw Error('Source/release mismatch: '+f);
 const zip=`batch-grab-${build.version}-beta.zip`;if(hash(fs.readFileSync(path.join(product,'dist',zip)))!==build.zipSha256)throw Error('Release hash mismatch');
 // Clean output prevents stale preview/pricing assets leaking into a new deployment.
-const retained=fs.existsSync(path.join(site,'assets'))?fs.readdirSync(path.join(site,'assets')).filter(f=>f.endsWith('.png')).map(f=>[f,fs.readFileSync(path.join(site,'assets',f))]):[];
 fs.rmSync(site,{recursive:true,force:true});fs.mkdirSync(site,{recursive:true});fs.cpSync(source,site,{recursive:true});fs.rmSync(path.join(site,'posts.json'),{force:true});fs.mkdirSync(path.join(site,'assets'),{recursive:true});
-for(const [f,b]of retained)fs.writeFileSync(path.join(site,'assets',f),b);
 const screenshotMap={'images-picker.png':'images-picker.png','gallery-picker.png':'gallery-picker.png','document-picker.png':'document-picker.png','document-outcomes.png':'index-outcomes.png','source-index-outcomes.png':'source-index-outcomes.png'};
 const screenshotHashes={};
-for(const [dest,file]of Object.entries(screenshotMap)){const evidence=path.join(product,'output/playwright/visual-v0.3',file);if(fs.existsSync(evidence))fs.copyFileSync(evidence,path.join(site,'assets',dest));const b=fs.readFileSync(path.join(site,'assets',dest));screenshotHashes[dest]=hash(b);}
+for(const [dest,file]of Object.entries(screenshotMap)){// Screenshots are approved source assets; test output must not mutate hosted content.
+const b=fs.readFileSync(path.join(site,'assets',dest));screenshotHashes[dest]=hash(b);}
 fs.writeFileSync(path.join(site,'launch-config.js'),'window.LAUNCH_CONFIG='+JSON.stringify(config).replace(/</g,'\\u003c')+';\n');
 fs.mkdirSync(path.join(site,'downloads'),{recursive:true});for(const f of [zip,'batch-grab-demo.zip'])fs.copyFileSync(path.join(product,'dist',f),path.join(site,'downloads',f));
 fs.mkdirSync(path.join(site,'fixture/files'),{recursive:true});let fixture=fs.readFileSync(path.join(product,'demo/index.html'),'utf8').replace('</title>','</title><meta name="robots" content="noindex,nofollow">');fixture=fixture.replace(/<a href="(?:descriptive|edge-cases)\.html">.*?<\/a>/g,'');fs.writeFileSync(path.join(site,'fixture/index.html'),fixture);

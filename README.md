@@ -1,5 +1,7 @@
 # Batch Grab 0.4.0
 
+[日本語](README-JA.md) · [Public launch status](LAUNCH_STATUS.md)
+
 A free, local-first Chrome extension for collecting useful webpage images and organizing web documents. English and Japanese UI. No account, payments, AI service or extension telemetry.
 
 ## Install the beta

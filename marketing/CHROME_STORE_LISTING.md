@@ -6,7 +6,7 @@ Name: Batch Grab (matches the localized manifest)
 
 Short description: Preview and download webpage images and documents. Review filenames, organize folders, and check actual download results.
 
-Category suggestion: Workflow & Planning / Productivity, subject to the live dashboard categories.
+Category: Tools (observed live dashboard option under Productivity).
 
 ## English description
 
