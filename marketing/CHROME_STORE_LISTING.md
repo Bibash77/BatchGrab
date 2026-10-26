@@ -51,7 +51,7 @@ Single purpose: select accessible files from the current webpage, review their n
 
 Permission justifications are in ../docs/SECURITY_AND_PRIVACY.md. Declare that the extension handles webpage URLs/context and download metadata locally; do not equate “not transmitted to the developer” with “no data handled.” Inspect current dashboard categories and answer consistently with the privacy policy. No sale, unrelated third-party transfer, advertising, credit, profiling or analytics use. No remote code.
 
-Privacy URL: pending approved real website origin + /privacy.html. Support URL: pending origin + /faq.html. Contact: ronaldoibibash310@gmail.com. Brand is Batch Grab; owner must confirm publisher identity and account declarations.
+Privacy URL: pending approved real website origin + /privacy.html. Support URL: pending origin + /faq.html. Contact: ronaldobibash310@gmail.com. Brand is Batch Grab; owner must confirm publisher identity and account declarations.
 
 ## Submission files
 

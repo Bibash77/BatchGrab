@@ -15,7 +15,7 @@ The owner enabled two-step verification and the explicitly approved ZIP upload s
 Draft URL: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a/mbeiingcdkhboociiidafkphfefkngoi/edit
 Package page confirms 0.4.0, English/Japanese and activeTab/scripting/downloads/storage/alarms; it explicitly states the item is not published. Owner subsequently approved unpublished listing edits. English/Japanese descriptions, Tools, prepared icon/screenshots/tile, single purpose, all five explanations and remote code=No are saved. Final data selections and certifications remain untouched. Verified public homepage, support and privacy URLs are now saved. No review submission or publication has occurred.
 
-The public support address in existing source is `ronaldoibibash310@gmail.com`, which differs from the publisher address. The owner explicitly confirmed keeping the original public support address ronaldoibibash310@gmail.com. Do not replace it with the account address.
+**Current owner-confirmed public contact: ronaldobibash310@gmail.com.** The owner corrected the earlier ronaldoibibash310@gmail.com typo on 2026-10-26, superseding prior keep-address instructions. Google confirms a new verification email was sent to the corrected address; owner verification is pending. Local website sources are fixed, while the live website correction awaits its separate exact-package deployment approval (CONTACT_CORRECTION.md).
 
 ## Listing
 
@@ -30,7 +30,7 @@ Screenshots: store-assets/01-collect-images.jpg, 02-organize-documents.jpg, 03-c
 Saved homepage: https://project-m1fyy.vercel.app/
 Saved support URL: https://project-m1fyy.vercel.app/faq.html
 Saved privacy URL: https://project-m1fyy.vercel.app/privacy.html
-All independently verified live; Japanese policy is at /privacy-ja.html. Google still requires contact email verification and all three privacy certifications. Contact ronaldoibibash310@gmail.com currently shows Unverified. The owner is checking inbox access; do not silently substitute the publisher sign-in email.
+All independently verified live; Japanese policy is at /privacy-ja.html. Google still requires contact email verification and all three privacy certifications. The owner explicitly corrected the contact to ronaldobibash310@gmail.com. A new verification email was sent there; verification is pending.
 
 ## Exact single-purpose text
 

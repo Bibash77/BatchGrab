@@ -1,1 +1,1 @@
-window.LAUNCH_CONFIG={"mode":"public","productionApproved":true,"publisherName":"Batch Grab","contactEmail":"ronaldoibibash310@gmail.com","publicOrigin":"https://project-m1fyy.vercel.app","analytics":false,"chromeStoreUrl":"","storeVerified":false,"version":"0.4.0"};
+window.LAUNCH_CONFIG={"mode":"public","productionApproved":true,"publisherName":"Batch Grab","contactEmail":"ronaldobibash310@gmail.com","publicOrigin":"https://project-m1fyy.vercel.app","analytics":false,"chromeStoreUrl":"","storeVerified":false,"version":"0.4.0"};
