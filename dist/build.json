@@ -1,0 +1,13 @@
+{
+  "version": "0.3.1",
+  "builtAt": "2026-10-19T13:50:26.391Z",
+  "files": {
+    "manifest.json": "474db5ab4ae0652bad0acded67ffa4364929710746cb2ece2d6feebffe228c02",
+    "background.js": "f0691a90e59b2f53edb18d621b40344b23294b73f24f24dbd334d7107c1784d9",
+    "lib.js": "9c87259e8ca705dd029cadc76e3bdae7b4cf9db56a4a9d8dd36ba0e48c253933",
+    "popup.js": "f38c45afd23caef6e9924961f9bdd8754ddbe5da5a6cbe862e8afab8be355a14",
+    "popup.html": "ca37dedfc9041281a8da5418028de6ec23e16068b59762869b9a106331868ae8",
+    "popup.css": "97f877e7c71606f3818748be9fab31d8c667ddda7e923ade0cb7fbb1d76ca867"
+  },
+  "zipSha256": "d96e4085782ba1d2ac84402ac41b2f2c35e075287b8833afba880713ce0a3790"
+}

@@ -1,0 +1,9 @@
+{
+  "asOf": "2026-10-22",
+  "confirmedCustomers": 0,
+  "confirmedRevenueUSD": 0,
+  "publicationsPerformedByAgent": 0,
+  "externalMessagesSentByAgent": 0,
+  "paymentInfrastructureActive": false,
+  "note": "Known starting state, not an estimate. QA visits and generated request drafts are excluded from the marketing tracker."
+}

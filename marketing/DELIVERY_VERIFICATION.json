@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "date": "2026-10-22",
+  "requiredFiles": [
+    "MARKETING_PLAN.md",
+    "CUSTOMER_CHANNELS.md",
+    "LAUNCH_CONTENT.md",
+    "CHROME_STORE_LISTING.md",
+    "FIRST_SALE_TRACKER.csv",
+    "LAUNCH_CHECKLIST.md"
+  ],
+  "channelVenues": 12,
+  "educationalPosts": 5,
+  "htmlPages": 12,
+  "trackerDataRows": 0,
+  "originalProductUnchanged": true,
+  "screenshotsUnchanged": true,
+  "graphicsDimensionsVerified": true,
+  "draftOnlyForms": true,
+  "marketingBrowserTest": {
+    "status": "passed",
+    "browser": "156.0.8078.4",
+    "htmlPages": 12,
+    "responsiveWidths": [
+      375,
+      768,
+      1440
+    ],
+    "walkthroughSteps": 4,
+    "internalBrokenLinks": 0,
+    "unexpectedRequests": [],
+    "formPOSTs": 0,
+    "realRequestsSent": 0,
+    "paymentsAttempted": 0,
+    "betaDownloadHashVerified": true,
+    "note": "QA requests and downloads are not marketing visits, beta requests, customers or revenue."
+  },
+  "storeCandidate": {
+    "status": "passed",
+    "chrome": "156.0.8078.4",
+    "version": "0.3.1",
+    "documentCards": 30,
+    "iconSizes": [
+      "16",
+      "32",
+      "48",
+      "128"
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "downloads",
+      "storage",
+      "alarms"
+    ],
+    "scope": "Icon-only candidate load and scan smoke test. Core browser/download suites remain the beta evidence; no new runtime feature was added.",
+    "published": false
+  },
+  "remainingPublicLaunchGates": [
+    "Approved public HTTPS URL missing",
+    "Preview mode / noindex retained until launch approval"
+  ],
+  "publications": 0,
+  "messagesSent": 0,
+  "payments": 0
+}

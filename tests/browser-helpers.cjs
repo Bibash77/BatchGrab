@@ -1,0 +1,22 @@
+const {chromium}=require('playwright');
+const fs=require('node:fs'), path=require('node:path'), assert=require('node:assert/strict');
+const {createDemoServer}=require('../scripts/demo-server.cjs');
+const root=path.resolve(__dirname,'..'), out=path.join(root,'output/playwright/visual-v0.3');fs.mkdirSync(out,{recursive:true});
+const fixtures=JSON.parse(fs.readFileSync(path.join(root,'demo/data.json')));
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(fn,description,timeout=60000){const end=performance.now()+timeout;while(performance.now()<end){const v=await fn();if(v)return v;await sleep(100);}throw Error('Timeout: '+description);}
+class Popup{
+ constructor(browser,targetId,sessionId){this.b=browser;this.targetId=targetId;this.s=sessionId;this.id=0;this.requests=new Map();this.errors=[];
+ browser.on('Target.receivedMessageFromTarget',e=>{if(e.sessionId!==this.s)return;const m=JSON.parse(e.message);if(m.id){const r=this.requests.get(m.id);if(r){this.requests.delete(m.id);m.error?r.reject(Error(m.error.message)):r.resolve(m.result);}}if(m.method==='Runtime.exceptionThrown')this.errors.push(m.params.exceptionDetails.text);});}
+ async send(method,params={}){const id=++this.id;const answer=new Promise((resolve,reject)=>{const timer=setTimeout(()=>{this.requests.delete(id);reject(Error('CDP request timeout: '+method));},15000);this.requests.set(id,{resolve:v=>{clearTimeout(timer);resolve(v);},reject:e=>{clearTimeout(timer);reject(e);}});});try { await this.b.send('Target.sendMessageToTarget',{sessionId:this.s,message:JSON.stringify({id,method,params})}); } catch(e) { this.requests.get(id)?.reject(e); this.requests.delete(id); } return answer;}
+ async eval(expression){const r=await this.send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true,userGesture:true});if(r.exceptionDetails)throw Error(r.exceptionDetails.exception?.description||r.exceptionDetails.text);return r.result.value;}
+ async tap(s){const r=await this.eval(`(()=>{const e=document.querySelector(${JSON.stringify(s)});e.scrollIntoView({block:'center'});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2,w:r.width,h:r.height}})()`);if(!r.w||!r.h)throw Error('Control is not visible: '+s);await this.send('Input.dispatchMouseEvent',{type:'mousePressed',x:r.x,y:r.y,button:'left',clickCount:1});await this.send('Input.dispatchMouseEvent',{type:'mouseReleased',x:r.x,y:r.y,button:'left',clickCount:1});}
+ click(s){return this.eval(`document.querySelector(${JSON.stringify(s)}).click()`);}
+ fill(s,v){return this.eval(`(()=>{const e=document.querySelector(${JSON.stringify(s)});e.focus();e.value=${JSON.stringify(v)};e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));})()`);}
+ async screenshot(name){await this.eval(`Promise.all(Array.from(document.images).filter(i=>{const r=i.getBoundingClientRect();return r.width&&r.height&&r.top<innerHeight&&r.bottom>0}).map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});setTimeout(r,3000)})))`);const m=await this.send('Page.getLayoutMetrics');const {data}=await this.send('Page.captureScreenshot',{captureBeyondViewport:true,clip:{x:0,y:0,width:760,height:Math.min(m.cssLayoutViewport.clientHeight,600),scale:1}});fs.writeFileSync(path.join(out,name),Buffer.from(data,'base64'));}
+ close(){return this.b.send('Target.closeTarget',{targetId:this.targetId});}
+}
+async function popup(browser,id,page){await page.bringToFront();const {targetInfos}=await browser.send('Target.getTargets',{filter:[{type:'tab',exclude:false}]});const tab=targetInfos.find(t=>t.url===page.url());assert(tab);await browser.send('Extensions.triggerAction',{id,targetId:tab.targetId});const t=await until(async()=>(await browser.send('Target.getTargets')).targetInfos.find(t=>t.url.startsWith(`chrome-extension://${id}/`) && /\/(?:ui\/|windows\/)?popup\.html(?:\?|$)/.test(t.url) && t.type==='page'),'toolbar popup');const {sessionId}=await browser.send('Target.attachToTarget',{targetId:t.targetId,flatten:false});const p=new Popup(browser,t.targetId,sessionId);await p.send('Runtime.enable');await until(()=>p.eval(`document.readyState==='complete'`),'popup loaded');return p;}
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+
+module.exports={chromium,fs,path,assert,root,out,sleep,until,Popup,popup,walk,createDemoServer};

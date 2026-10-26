@@ -1,0 +1,17 @@
+{
+  "productVersion": "0.3.1",
+  "productZipSha256": "d96e4085782ba1d2ac84402ac41b2f2c35e075287b8833afba880713ce0a3790",
+  "unchangedScreenshots": {
+    "document-picker.png": "a5e24c42924b66ba8e85fb3e5ced347f4977177b9b8869e99af3e320ef658b21",
+    "document-outcomes.png": "b08a3fc2a3f5a8866b8cd9c46cc47b041fa67bfa07e4b7d45a9474a0f70a5057",
+    "source-index-outcomes.png": "bc9c20363934b424f0f303c00fb1d59aa97e00f1f1c5147e5dd59ab809e01a7f"
+  },
+  "mode": "preview",
+  "launchBlockers": [
+    "Approved public HTTPS URL missing",
+    "Preview mode / noindex retained until launch approval"
+  ],
+  "analytics": false,
+  "formsTransmit": false,
+  "paymentsActive": false
+}

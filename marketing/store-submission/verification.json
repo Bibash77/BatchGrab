@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "chrome": "156.0.8078.4",
+  "version": "0.3.1",
+  "documentCards": 30,
+  "iconSizes": [
+    "16",
+    "32",
+    "48",
+    "128"
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage",
+    "alarms"
+  ],
+  "scope": "Icon-only candidate load and scan smoke test. Core browser/download suites remain the beta evidence; no new runtime feature was added.",
+  "published": false
+}

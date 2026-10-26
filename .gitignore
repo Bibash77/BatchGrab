@@ -1,0 +1,13 @@
+# Local operating system and editor files
+.DS_Store
+*.log
+# Dependencies, credentials and browser/test output
+node_modules/
+.env
+.env.*
+!.env.example
+output/
+**/output/
+playwright-report/
+test-results/
+*profile*/
