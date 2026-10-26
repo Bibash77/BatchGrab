@@ -4,9 +4,18 @@ Intended account: existing connected owner account. Intended team: biswash166-97
 
 The API rejected creating the empty project with 403. The owner's first consent link was already expired at the retry. The owner also completed a fresh consent action, but the next request still returned 403 within its 10-minute window. Do not keep repeating consent links. The Vercel web login is open for an authenticated dashboard fallback. The local CLI session also reports an invalid token; no credentials were inspected, printed or replaced.
 
-## Authenticated browser destination — owner choice pending
+## Verified empty project — created with owner approval
 
-The in-app browser now shows account **ronaldobibash310-8002**, team **bib’s projects**, slug **bibs-projects-f9270923**, badge **Hobby**, with no projects. This is a different account/team from the connector above. Owner approval has been requested to create an empty Batch Grab project there. No project has been created, Git linked or deployment started. Do not treat successful browser login as destination/deployment approval.
+Owner approved account **ronaldobibash310-8002**, team **bib’s projects**, slug **bibs-projects-f9270923**, **Hobby**, for empty-project creation only.
+
+- Project: **batch-grab**
+- Project ID: **prj_WLJ1viALkGAOfKNStBx82yB793HU**
+- Dashboard: https://vercel.com/bibs-projects-f9270923/batch-grab
+- Assigned production domain: **project-m1fyy.vercel.app**, explicitly **No Deployment**.
+- Vercel’s empty-project button generated project-m1fyy automatically; it was renamed to batch-grab in General settings. The generated domain retained its original name.
+- No Git connection, site upload, production/preview deployment, analytics activation or paid service.
+
+Separate approval is still required before deployment. Do not claim the assigned domain serves the website. The connector remains attached to the older account; use the authenticated approved browser target unless its connection is separately corrected. Default project Data Preferences currently has “Improve models with this project’s data” checked; no source was uploaded. Review with owner before uploading source if a change is desired.
 
 ## After destination approval
 

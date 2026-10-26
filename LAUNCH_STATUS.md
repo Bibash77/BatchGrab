@@ -7,9 +7,9 @@ Last checked: 2026-10-26. Status words: NOT STARTED, PREPARED, AWAITING APPROVAL
 | Production extension 0.4.0 | PREPARED | ZIP/source/archive checks passed; exact hash below |
 | English/Japanese workflows | PREPARED | Real Chrome toolbar/download tests passed again on October 26 |
 | Static Vercel website | PREPARED | 22 bilingual/task/help pages, 30 working demo PDFs, free-first messaging and production SEO gates |
-| Vercel project access | AWAITING APPROVAL | Browser authenticated as ronaldobibash310-8002 in bib’s projects (bibs-projects-f9270923, Hobby). This differs from connector team biswash166-9736s-projects; owner destination choice requested. Connector remains 403; CLI token invalid |
-| Exact Vercel project/domain | NOT STARTED | Proposed empty project name batch-grab; creation was rejected. No project ID or assigned public URL has been obtained |
-| Vercel deployment approval | NOT STARTED | Show exact verified team/project/domain and source revision after project access is restored, then request approval |
+| Vercel project access | PREPARED | Owner approved bib’s projects (bibs-projects-f9270923, Hobby), browser account ronaldobibash310-8002; empty project created successfully |
+| Exact Vercel project/domain | PREPARED | batch-grab, prj_WLJ1viALkGAOfKNStBx82yB793HU. Vercel assigned project-m1fyy.vercel.app; domain settings say No Deployment. Project rename did not rename the generated domain |
+| Vercel deployment approval | NOT STARTED | Empty-project creation only was approved. Deployment remains unauthorized; show prepared content and exact destination before requesting approval |
 | Public Vercel deployment | NOT STARTED | No deployment submitted; live URL and live tests unavailable |
 | Chrome publisher dashboard | PREPARED | Owner sign-in and two-step verification completed; authenticated publisher ronaldobibash310@gmail.com |
 | Chrome ZIP draft upload | PREPARED | Approved upload succeeded after owner enabled two-step verification; package page verifies 0.4.0, English/Japanese and five expected permissions |
@@ -35,7 +35,7 @@ Fresh verification: 23 naming/filter assertions, 19 visual helper assertions, se
 
 ## Account and approval blockers
 
-1. **Vercel destination:** owner-authenticated browser shows bib’s projects / bibs-projects-f9270923 (Hobby), account ronaldobibash310-8002. Asked permission to create an empty Batch Grab project there because it differs from the connector team. Do not deploy or link Git until the destination and deployment are approved. No Batch Grab project exists yet.
+1. **Vercel destination:** owner approved creating an empty project in bib’s projects / bibs-projects-f9270923 (Hobby), account ronaldobibash310-8002. Created and renamed it batch-grab; project ID prj_WLJ1viALkGAOfKNStBx82yB793HU. Assigned domain project-m1fyy.vercel.app has No Deployment. No Git connection, site upload, analytics activation or deployment was performed. Separate deployment approval remains required.
 2. **Chrome draft:** owner approved ZIP upload and the English/Japanese listing, Tools category, prepared assets and permission explanations. All are saved. Final data declarations/certifications, public URLs and review submission remain pending; nothing is published.
 3. **Support email:** existing source uses `ronaldoibibash310@gmail.com`; authenticated publisher uses `ronaldobibash310@gmail.com`. Owner explicitly confirmed keeping ronaldoibibash310@gmail.com as the public support email. The account and support addresses may differ.
 4. **Publication approvals:** website destination/deployment, complete store declarations/submission and exact marketing posts remain separate approvals. No purchases, paid infrastructure or domain registration are authorized.
@@ -46,7 +46,8 @@ Fresh verification: 23 naming/filter assertions, 19 visual helper assertions, se
 - Publisher dashboard observed: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a
 - Item-specific store draft URL: https://chrome.google.com/webstore/devconsole/29920f8c-2190-438e-a8aa-0b336da3e75a/mbeiingcdkhboociiidafkphfefkngoi/edit
 - Store public URL: **not known / not invented**.
-- Production website URL: **not assigned / not deployed**.
+- Vercel project: https://vercel.com/bibs-projects-f9270923/batch-grab
+- Assigned production domain: project-m1fyy.vercel.app — **No Deployment; not a live website**.
 - Approved/public marketing post URLs: **none**.
 - Live HTTPS, download, screenshot, FAQ, privacy and performance tests: **not run; no deployed URL**.
 
@@ -56,4 +57,4 @@ Website visitors: **not measured**. Installation CTA events: **not collected**. 
 
 ## Completed external actions
 
-Read account/project metadata through the connector; empty-project creation returned 403 three times despite owner consent attempts. Browser sign-in now works in a different Hobby team; destination choice is pending. The owner enabled Google two-step verification, then the approved production ZIP upload created the Chrome draft. Approved English/Japanese listing copy, category, assets and permission explanations were saved with Item saved confirmations. Package page confirms version 0.4.0 and “This item is not published yet.” Data category checkboxes and three certifications remain untouched; no policy URL is invented. No deployment, review submission, public post, outreach, payment or security-check bypass was performed.
+Read account/project metadata through the connector; empty-project creation returned 403 three times despite owner consent attempts. Browser sign-in works in the owner-approved Hobby team. Created an empty project through Vercel’s explicit empty-project control, then renamed the generated project to batch-grab. Verified project ID and assigned domain; no production or preview deployment exists. The owner enabled Google two-step verification, then the approved production ZIP upload created the Chrome draft. Approved English/Japanese listing copy, category, assets and permission explanations were saved with Item saved confirmations. Package page confirms version 0.4.0 and “This item is not published yet.” Data category checkboxes and three certifications remain untouched; no policy URL is invented. No deployment, review submission, public post, outreach, payment or security-check bypass was performed.
