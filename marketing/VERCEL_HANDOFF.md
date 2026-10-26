@@ -1,6 +1,6 @@
 # Vercel deployment handoff — no deployment yet
 
-Intended account: existing connected owner account. Intended team: biswash166-9736s-projects. Proposed new project: batch-grab. The connected user reports Hobby billing, but the target team's project/domain and eligible plan must be verified before deployment. No paid resource, custom domain or analytics service is authorized.
+Current approved empty-project destination is the browser account/team listed below. The older connector account/team biswash166-9736s-projects is historical context only. No paid resource, custom domain or analytics service is authorized.
 
 The API rejected creating the empty project with 403. The owner's first consent link was already expired at the retry. The owner also completed a fresh consent action, but the next request still returned 403 within its 10-minute window. Do not keep repeating consent links. The Vercel web login is open for an authenticated dashboard fallback. The local CLI session also reports an invalid token; no credentials were inspected, printed or replaced.
 
@@ -33,3 +33,7 @@ Separate approval is still required before deployment. Do not claim the assigned
 In Vercel, choose the intended team → Add New → Project, or create an empty Other/static project. Use the existing Bibash77/BatchGrab repository only when ready for a deployment. Set root directory to repository root and the settings above. Stop before Deploy until the exact destination/config has been approved. No need to enter payment information or purchase a domain. Provide the actual project link so assisted verification can resume.
 
 If an interactive Git import would automatically deploy, do not finish it merely to inspect settings. The prepared site ZIP and committed configuration remain available while authentication/approval is resolved.
+
+## Prepared deployment route
+
+`DEPLOYMENT_APPROVAL.md` identifies an exact locally rendered static ZIP for the existing project and assigned origin. Use the existing project’s file-deployment control only after approval; no Git connection is required. This candidate contains root-level static vercel.json with no install/build commands and outputDirectory=".". Repository-root builds remain available as an alternative, but are not the proposed browser upload. The candidate is local and unapproved; no deployment exists.

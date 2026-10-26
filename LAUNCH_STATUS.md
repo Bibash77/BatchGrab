@@ -6,10 +6,10 @@ Last checked: 2026-10-26. Status words: NOT STARTED, PREPARED, AWAITING APPROVAL
 |---|---|---|
 | Production extension 0.4.0 | PREPARED | ZIP/source/archive checks passed; exact hash below |
 | English/Japanese workflows | PREPARED | Real Chrome toolbar/download tests passed again on October 26 |
-| Static Vercel website | PREPARED | 22 bilingual/task/help pages, 30 working demo PDFs, free-first messaging and production SEO gates |
+| Static Vercel website | PREPARED | 22 bilingual/task/help pages, 30 working demo PDFs, reviewed Vercel-specific hosting disclosures, exact static deployment candidate and production SEO gates |
 | Vercel project access | PREPARED | Owner approved bib’s projects (bibs-projects-f9270923, Hobby), browser account ronaldobibash310-8002; empty project created successfully |
 | Exact Vercel project/domain | PREPARED | batch-grab, prj_WLJ1viALkGAOfKNStBx82yB793HU. Vercel assigned project-m1fyy.vercel.app; domain settings say No Deployment. Project rename did not rename the generated domain |
-| Vercel deployment approval | NOT STARTED | Empty-project creation only was approved. Deployment remains unauthorized; show prepared content and exact destination before requesting approval |
+| Vercel deployment approval | AWAITING APPROVAL | Exact static candidate and real destination in marketing/DEPLOYMENT_APPROVAL.md; previous approval was empty-project creation only |
 | Public Vercel deployment | NOT STARTED | No deployment submitted; live URL and live tests unavailable |
 | Chrome publisher dashboard | PREPARED | Owner sign-in and two-step verification completed; authenticated publisher ronaldobibash310@gmail.com |
 | Chrome ZIP draft upload | PREPARED | Approved upload succeeded after owner enabled two-step verification; package page verifies 0.4.0, English/Japanese and five expected permissions |
@@ -35,7 +35,7 @@ Fresh verification: 23 naming/filter assertions, 19 visual helper assertions, se
 
 ## Account and approval blockers
 
-1. **Vercel destination:** owner approved creating an empty project in bib’s projects / bibs-projects-f9270923 (Hobby), account ronaldobibash310-8002. Created and renamed it batch-grab; project ID prj_WLJ1viALkGAOfKNStBx82yB793HU. Assigned domain project-m1fyy.vercel.app has No Deployment. No Git connection, site upload, analytics activation or deployment was performed. Separate deployment approval remains required.
+1. **Vercel destination:** owner approved creating an empty project in bib’s projects / bibs-projects-f9270923 (Hobby), account ronaldobibash310-8002. Created and renamed it batch-grab; project ID prj_WLJ1viALkGAOfKNStBx82yB793HU. Assigned domain project-m1fyy.vercel.app has No Deployment. No Git connection, site upload, analytics activation or deployment was performed. Separate deployment approval remains required. Exact 68-file static candidate prepared locally with SHA-256 e52fde389ce61c9c54045ea1f684a8b0ac1c02d83175d1d7abd5f6d414a749b2; no upload. See marketing/DEPLOYMENT_APPROVAL.md.
 2. **Chrome draft:** owner approved ZIP upload and the English/Japanese listing, Tools category, prepared assets and permission explanations. All are saved. Final data declarations/certifications, public URLs and review submission remain pending; nothing is published.
 3. **Support email:** existing source uses `ronaldoibibash310@gmail.com`; authenticated publisher uses `ronaldobibash310@gmail.com`. Owner explicitly confirmed keeping ronaldoibibash310@gmail.com as the public support email. The account and support addresses may differ.
 4. **Publication approvals:** website destination/deployment, complete store declarations/submission and exact marketing posts remain separate approvals. No purchases, paid infrastructure or domain registration are authorized.
